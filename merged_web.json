@@ -2,23 +2,23 @@
   "stats": {
     "suites": 22,
     "tests": 36,
-    "passes": 34,
+    "passes": 33,
     "pending": 1,
-    "failures": 1,
+    "failures": 2,
     "testsRegistered": 36,
-    "passPercent": 94.44444444444444,
+    "passPercent": 91.66666666666667,
     "pendingPercent": 2.7777777777777777,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-10-14T11:41:47.374Z",
-    "end": "2025-10-14T12:10:46.092Z",
-    "duration": 1738718
+    "start": "2025-10-14T18:43:12.578Z",
+    "end": "2025-10-14T19:13:47.928Z",
+    "duration": 1835350
   },
   "results": [
     {
-      "uuid": "7c572a45-1e2f-487c-bf0e-f475417a4a11",
+      "uuid": "160c0032-05d5-49fb-8b98-60066264266f",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0ecec332-4ac3-4f72-bf12-e5c6fb5a8efd",
+          "uuid": "ea06551e-d9c4-4387-83d4-d594821432cd",
           "title": "Portal Buonny E2E - Login com credenciais válidas",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login PB sucesso",
               "fullTitle": "Portal Buonny E2E - Login com credenciais válidas Login PB sucesso",
               "timedOut": null,
-              "duration": 18063,
+              "duration": 24709,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const user = Cypress.env(\"user_name\");\nconst password = Cypress.env(\"user_password\");\nconst options = {\n  cacheSession: false\n};\ncy.login(user, password, options);\ncy.url().should(\"include\", \"/Painel/modulo_admin\");",
               "err": {},
-              "uuid": "c770a9be-b975-41eb-baa2-7ee1b9af1179",
-              "parentUUID": "0ecec332-4ac3-4f72-bf12-e5c6fb5a8efd",
+              "uuid": "2cfd3761-b6bd-402c-9781-4d28bfc36216",
+              "parentUUID": "ea06551e-d9c4-4387-83d4-d594821432cd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c770a9be-b975-41eb-baa2-7ee1b9af1179"
+            "2cfd3761-b6bd-402c-9781-4d28bfc36216"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18063,
+          "duration": 24709,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ed6fe16a-6d8a-4eba-9592-c24db2552a12",
+      "uuid": "61daacac-f08b-4fc2-b9a3-55c3b2947d74",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7c1b3124-6e1a-4fe0-87bc-40586903abc1",
+          "uuid": "5f277a69-aa62-4449-ada9-4e9ce306a8ae",
           "title": "Portal Buonny E2E - Logout",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "logout, com sucesso",
               "fullTitle": "Portal Buonny E2E - Logout logout, com sucesso",
               "timedOut": null,
-              "duration": 32238,
+              "duration": 38649,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "cy.logout();\ncy.url().should(\"include\", \"/\");",
               "err": {},
-              "uuid": "a1ac9183-97c5-4537-bbd6-53385d894ece",
-              "parentUUID": "7c1b3124-6e1a-4fe0-87bc-40586903abc1",
+              "uuid": "ebe79cc8-5843-49eb-af3b-9a38470476fa",
+              "parentUUID": "5f277a69-aa62-4449-ada9-4e9ce306a8ae",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a1ac9183-97c5-4537-bbd6-53385d894ece"
+            "ebe79cc8-5843-49eb-af3b-9a38470476fa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 32238,
+          "duration": 38649,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0c67f915-34e5-4f85-875f-96eaadc938bd",
+      "uuid": "cb2c1281-0a7f-4ea7-9c80-649ff6ab0d3a",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/003.e2e-login-erros-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/003.e2e-login-erros-PB.cy.js",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c58548ac-5ed9-4aac-873e-8484bbc9fb38",
+          "uuid": "c1ebaefb-534a-41e4-8709-bb06da48024f",
           "title": "Portal Buonny E2E - Login erros",
           "fullFile": "",
           "file": "",
@@ -154,7 +154,7 @@
               "title": "login, inválido",
               "fullTitle": "Portal Buonny E2E - Login erros login, inválido",
               "timedOut": null,
-              "duration": 20212,
+              "duration": 17466,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -163,8 +163,8 @@
               "context": null,
               "code": "cy.get(\"#usuario\").type(Cypress.env(\"user_name\"), {\n  log: false\n});\ncy.get(\"#senha\").type(\"admin123\"), {\n  log: false\n};\ncy.get(\".entrar\").click();\ncy.get(\".alert > p\").should(\"be.visible\").and(\"contain.text\", \"Usuário e/ou senha inválidos.\");",
               "err": {},
-              "uuid": "9dfc8eec-441b-4a2f-a500-8d4b0cb10e2f",
-              "parentUUID": "c58548ac-5ed9-4aac-873e-8484bbc9fb38",
+              "uuid": "7bb0d8fa-724f-49d3-8599-7eed00ebfa86",
+              "parentUUID": "c1ebaefb-534a-41e4-8709-bb06da48024f",
               "isHook": false,
               "skipped": false
             },
@@ -172,30 +172,30 @@
               "title": "login, captcha inválido",
               "fullTitle": "Portal Buonny E2E - Login erros login, captcha inválido",
               "timedOut": null,
-              "duration": 9628,
+              "duration": 10787,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(\"#usuario\").type(\"admin\", {\n  log: false\n});\ncy.get(\"#senha\").type(\"admin123\", {\n  log: false\n});\ncy.get(\".entrar\").click();\ncy.get(\".alert > p\").should(\"be.visible\").and(\"contain.text\", \"Captcha inválido. Por favor, tente novamente.\");",
               "err": {},
-              "uuid": "3fadd104-c7e7-4b4f-9060-521ddf9e2758",
-              "parentUUID": "c58548ac-5ed9-4aac-873e-8484bbc9fb38",
+              "uuid": "2933af2f-d57b-486d-bc50-0f744dff3c8c",
+              "parentUUID": "c1ebaefb-534a-41e4-8709-bb06da48024f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9dfc8eec-441b-4a2f-a500-8d4b0cb10e2f",
-            "3fadd104-c7e7-4b4f-9060-521ddf9e2758"
+            "7bb0d8fa-724f-49d3-8599-7eed00ebfa86",
+            "2933af2f-d57b-486d-bc50-0f744dff3c8c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 29840,
+          "duration": 28253,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -211,7 +211,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "80db0455-5813-46cd-a3a0-aaf5e682455e",
+      "uuid": "04540877-efaf-412c-a9f2-238912a5149e",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
@@ -220,7 +220,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1de289c6-9f9e-490e-8ac2-9594039006d5",
+          "uuid": "de55c3f8-21bc-4a69-b227-4b77566a81ab",
           "title": "Portal Buonny E2E - Campo Esqueci Minha Senha",
           "fullFile": "",
           "file": "",
@@ -231,17 +231,17 @@
               "title": "acessar, esqueci minha senha",
               "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha acessar, esqueci minha senha",
               "timedOut": null,
-              "duration": 7418,
+              "duration": 10282,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(\".esqueci-senha\").click();\ncy.url().should(\"include\", \"/usuarios/esqueci_minha_senha\");\ncy.get(\"h1\").should(\"contain.text\", \"Esqueceu sua senha?\");",
               "err": {},
-              "uuid": "7d2ea980-9c8e-4185-a2a9-483ed0c87c7c",
-              "parentUUID": "1de289c6-9f9e-490e-8ac2-9594039006d5",
+              "uuid": "24277424-4b2c-471b-92fb-4e22c6c8749a",
+              "parentUUID": "de55c3f8-21bc-4a69-b227-4b77566a81ab",
               "isHook": false,
               "skipped": false
             },
@@ -258,8 +258,8 @@
               "context": null,
               "code": "cy.get(\".esqueci-senha\").click();\ncy.get(\"#UsuarioApelido\").type(Cypress.env(\"user_name\"), {\n  log: false\n});\ncy.get(\".submit-button\").click();\ncy.url().should(\"include\", \"/usuarios/informar_token\");\ncy.get(\".middle-box\").should(\"be.visible\");\ncy.get(\"h1\").should(\"contain.text\", \"Verificação de dispositivo\");\ncy.get(\"#email\").should(\"contain.text\", \"se*****il@buonny.com.br\");",
               "err": {},
-              "uuid": "d279812f-9079-40bf-b3fa-197862a6e99e",
-              "parentUUID": "1de289c6-9f9e-490e-8ac2-9594039006d5",
+              "uuid": "c7f5cbff-bb44-4ce7-9272-3f1c66fb1168",
+              "parentUUID": "de55c3f8-21bc-4a69-b227-4b77566a81ab",
               "isHook": false,
               "skipped": false
             },
@@ -267,7 +267,7 @@
               "title": "recuperar senha, usuario inexistente",
               "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha recuperar senha, usuario inexistente",
               "timedOut": null,
-              "duration": 9814,
+              "duration": 6501,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -276,23 +276,23 @@
               "context": null,
               "code": "cy.visit(\"/usuarios/esqueci_minha_senha\");\ncy.get(\"#UsuarioApelido\").type(\"admin123\", {\n  log: false\n});\ncy.get(\".submit-button\").click();\ncy.get(\".help-block.error-message\").should(\"be.visible\").should(\"contain.text\", \"Usuário não encontrado\");",
               "err": {},
-              "uuid": "b13f94e9-7215-4f07-8a25-439231874071",
-              "parentUUID": "1de289c6-9f9e-490e-8ac2-9594039006d5",
+              "uuid": "690c987e-1cd0-4f82-bc51-740a0aebe5dd",
+              "parentUUID": "de55c3f8-21bc-4a69-b227-4b77566a81ab",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7d2ea980-9c8e-4185-a2a9-483ed0c87c7c",
-            "b13f94e9-7215-4f07-8a25-439231874071"
+            "24277424-4b2c-471b-92fb-4e22c6c8749a",
+            "690c987e-1cd0-4f82-bc51-740a0aebe5dd"
           ],
           "failures": [],
           "pending": [
-            "d279812f-9079-40bf-b3fa-197862a6e99e"
+            "c7f5cbff-bb44-4ce7-9272-3f1c66fb1168"
           ],
           "skipped": [],
-          "duration": 17232,
+          "duration": 16783,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -308,7 +308,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f336cee0-3968-4d0d-b8a2-9437eb09dd5d",
+      "uuid": "1e6417e4-d10b-46fb-98ec-f70f67d8f84b",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/001.e2e-cadastro-veiculo.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/001.e2e-cadastro-veiculo.cy.js",
@@ -317,7 +317,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "986fb87b-dae6-495b-af12-ead4505b6a34",
+          "uuid": "c4618327-950a-41ad-9b6f-a825a23afe5e",
           "title": "Portal Buonny - Cadastro de veículo",
           "fullFile": "",
           "file": "",
@@ -328,7 +328,7 @@
               "title": "Sucesso - preenche o formulário de veículo com dados válidos",
               "fullTitle": "Portal Buonny - Cadastro de veículo Sucesso - preenche o formulário de veículo com dados válidos",
               "timedOut": null,
-              "duration": 81169,
+              "duration": 79288,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -337,20 +337,20 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\ncy.visit(\"/veiculos/localizar_veiculo/87906\");\ncy.get(\"#TVeicVeiculoVeicPlaca\").type(placa);\ncy.get(\".btn-success\").click();\ncy.url().should(\"include\", `/87906/${placa}`);\ncy.get(\"#TVeicVeiculoVeicTveiCodigo\").select(\"CAVALO\");\ncy.get(\"#TVeicVeiculoVeicTcarCodigo\").select(\"APENAS O CAVALO\");\ncy.get(\"#TMvecModeloVeiculoMvecMveiCodigo\").select(\"SCANIA\");\ncy.get(\"#TVeicVeiculoVeicMvecCodigo\").select(\"SCANIA\");\ncy.get(\"#TPaisPaisPaisCodigo\").select(\"BRASIL\");\ncy.get(\"#TEstaEstadoEstaCodigo\").select(\"SC\");\ncy.get(\"#TVeicVeiculoVeicCidaCodigoEmplacamento\").select(\"BLUMENAU\");\ncy.get(\"#VeiculoCorCodigo\").select(\"AZUL\");\ncy.get(\"#TVeicVeiculoVeicStatus\").select(\"ATIVO\");\ncy.get(\"#Tracker0TTecnTecnologiaTecnCodigo\").select(\"SASCAR\");\ncy.get(\"#Tracker0TVtecVersaoTecnologiaVtecCodigo\").select(\"SASCAR - NORMAL\");\n// Seleciona o dia 15, um ano no futuro\n(0, _gerarPlaca.selecionarDataAnoFuturo)(\"#TVeicVeiculoVeicDataVencLicenciamento\");\ncy.get(\"#TVeicVeiculoVeicAnoFabricacao\").type(\"2000\");\ncy.get(\"#TVeicVeiculoVeicAnoModelo\").type(\"2000\");\ncy.get(\"#TVeicVeiculoVeicChassi\").type(\"9BSRH4X2ZS3359107\");\ncy.get(\"#TVeicVeiculoVeicRenavam\").type(\"00641361785\");\ncy.get(\"#TVeicVeiculoVeicTelefone\").type(\"(11)9729-24482\");\ncy.get(\"#VeiculoMotorista\").type(\"43006151879\");\ncy.get(\"#Tracker0TTermTerminalTermNumeroTerminal\").type(placa);\ncy.get(\"#select2-TVeicVeiculoVeicVteiCodigo-container\").click();\ncy.contains(\".select2-results__option\", \"2 eixos (1 simples rodagem simples + 1 simples rodagem dupla- 6 pneus)\").click();\ncy.get(\"#TvcoCodigo1\").check({\n  force: true\n});\ncy.get(\"#TVeicVeiculoVeicTemCofre0\").check({\n  force: true\n});\ncy.get(\"#TVeicVeiculoProprietario1\").check({\n  force: true\n});\ncy.get(\"#submit_form\").click();\ncy.get(\".ui-dialog-buttonset > .btn-success\").click();\ncy.url().should(\"include\", \"/portal/Veiculos/adicionar_veiculo\");",
               "err": {},
-              "uuid": "6fa65801-ce45-4363-b079-d6fc8a49b0ee",
-              "parentUUID": "986fb87b-dae6-495b-af12-ead4505b6a34",
+              "uuid": "5f49b84c-f8fe-4b5e-b062-9c0f7aa187e3",
+              "parentUUID": "c4618327-950a-41ad-9b6f-a825a23afe5e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6fa65801-ce45-4363-b079-d6fc8a49b0ee"
+            "5f49b84c-f8fe-4b5e-b062-9c0f7aa187e3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 81169,
+          "duration": 79288,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -366,7 +366,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "eda3622c-d403-4feb-b05a-4132d1816594",
+      "uuid": "d69000e7-7ccf-443e-8fac-8d3eaa975ece",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/002.e2e-cadastro-veiculo-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/002.e2e-cadastro-veiculo-erros.cy.js",
@@ -375,7 +375,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "99b49417-aad9-4671-be29-31353f3a0cb4",
+          "uuid": "1c293d7b-758d-4995-834a-92b81860ae8d",
           "title": "Cadastro de veículos - validações obrigatórias",
           "fullFile": "",
           "file": "",
@@ -386,7 +386,7 @@
               "title": "Erro - ano de fabricação vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - ano de fabricação vazio",
               "timedOut": null,
-              "duration": 46586,
+              "duration": 50714,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -395,8 +395,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\npreencherCamposObrigatorios({\n  anoFab: null,\n  anoMod: \"2000\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Ano de fabricação inválido. Ano de modelo inválido\");",
               "err": {},
-              "uuid": "366a96f2-d792-4959-97ed-2e8fa8919085",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "545a3156-a83c-4650-8bd1-b3bf26ebf702",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -404,7 +404,7 @@
               "title": "Erro - ano de modelo vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - ano de modelo vazio",
               "timedOut": null,
-              "duration": 51433,
+              "duration": 49140,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -413,8 +413,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: null,\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Informe o ano do modelo\");",
               "err": {},
-              "uuid": "4e82443f-6d68-4667-81b7-145d1c5ed064",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "c183a975-ae50-45b9-aa43-27284e2ea728",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -422,7 +422,7 @@
               "title": "Erro - chassi vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - chassi vazio",
               "timedOut": null,
-              "duration": 51793,
+              "duration": 53391,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -431,8 +431,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2000\",\n  chassi: null,\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Informe o chassi\");",
               "err": {},
-              "uuid": "df377bee-2ddc-4359-b976-d842ff9b1027",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "fa5d6e5d-1b89-44fd-8cf3-36e81b4ce5a8",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -440,7 +440,7 @@
               "title": "Erro - renavam vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - renavam vazio",
               "timedOut": null,
-              "duration": 42766,
+              "duration": 50041,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -449,8 +449,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2000\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: null\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Informe o renavam\");",
               "err": {},
-              "uuid": "64822df0-1f94-4f27-9f9a-e395a1e6ed1c",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "bc2c95df-2a52-47de-a9da-32c7ac9010c7",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -458,7 +458,7 @@
               "title": "Erro - tipo de veículo vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - tipo de veículo vazio",
               "timedOut": null,
-              "duration": 51812,
+              "duration": 54544,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -467,8 +467,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\ncy.get(\"#TVeicVeiculoVeicTveiCodigo\").select(\"\");\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2001\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Informe o tipo\");",
               "err": {},
-              "uuid": "9d101d0a-4a53-47bb-9cc9-a9671c1165a9",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "dc2e254e-2e87-468e-aed5-f9b38ea37ba2",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -476,7 +476,7 @@
               "title": "Erro - tipo de eixo vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - tipo de eixo vazio",
               "timedOut": null,
-              "duration": 45286,
+              "duration": 54689,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -485,8 +485,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa, {\n  preencherTipoEixo: false\n});\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2001\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\"#erro_eixo\").should(\"be.visible\").and(\"contain.text\", \"Informe o tipo de eixo\");",
               "err": {},
-              "uuid": "7586c5b4-5a22-4830-b29a-ff9617abffad",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "668d37c9-312b-42b0-ade0-68ec88ac7cb5",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -494,7 +494,7 @@
               "title": "Erro - cidade de emplacamento vazia",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - cidade de emplacamento vazia",
               "timedOut": null,
-              "duration": 52831,
+              "duration": 55205,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -503,8 +503,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\ncy.get(\"#TVeicVeiculoVeicCidaCodigoEmplacamento\").select(\"\");\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2001\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Informe a cidade de emplacamento\");",
               "err": {},
-              "uuid": "d3ad0717-d95c-4997-af98-cf780113e22d",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "31c4d33f-7285-4ba5-a6de-4a0c230fe240",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -512,7 +512,7 @@
               "title": "Erro - versão da tecnologia vazia",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - versão da tecnologia vazia",
               "timedOut": null,
-              "duration": 51003,
+              "duration": 47637,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -521,8 +521,8 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa);\ncy.get(\"#Tracker0TVtecVersaoTecnologiaVtecCodigo\").select(\"\");\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2001\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Versão da Tecnologia deve ser informado\");",
               "err": {},
-              "uuid": "f9b77f5f-ca58-4ded-a6bc-b5a3545ca983",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "9ac8d5e2-52cc-407b-8cc6-49527a674864",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             },
@@ -530,7 +530,7 @@
               "title": "Erro - vencimento do licenciamento vazio",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Erro - vencimento do licenciamento vazio",
               "timedOut": null,
-              "duration": 42098,
+              "duration": 43618,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -539,28 +539,28 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\nprepararFormularioComCamposPadrao(placa, {\n  preencherDataVencLicenciamento: false\n});\npreencherCamposObrigatorios({\n  anoFab: \"2000\",\n  anoMod: \"2001\",\n  chassi: \"9BSRH4X2ZS3359107\",\n  renavam: \"00641361785\"\n});\nsubmeterFormulario();\ncy.get(\".alert.alert-danger\").should(\"be.visible\").and(\"contain.text\", \"Vencimento do licenciamento inválido ou vencido\");",
               "err": {},
-              "uuid": "71ad3ca2-5920-4f5c-a0d4-0734b5218298",
-              "parentUUID": "99b49417-aad9-4671-be29-31353f3a0cb4",
+              "uuid": "6bb87091-8054-43a0-8989-ec796ad637da",
+              "parentUUID": "1c293d7b-758d-4995-834a-92b81860ae8d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "366a96f2-d792-4959-97ed-2e8fa8919085",
-            "4e82443f-6d68-4667-81b7-145d1c5ed064",
-            "df377bee-2ddc-4359-b976-d842ff9b1027",
-            "64822df0-1f94-4f27-9f9a-e395a1e6ed1c",
-            "9d101d0a-4a53-47bb-9cc9-a9671c1165a9",
-            "7586c5b4-5a22-4830-b29a-ff9617abffad",
-            "d3ad0717-d95c-4997-af98-cf780113e22d",
-            "f9b77f5f-ca58-4ded-a6bc-b5a3545ca983",
-            "71ad3ca2-5920-4f5c-a0d4-0734b5218298"
+            "545a3156-a83c-4650-8bd1-b3bf26ebf702",
+            "c183a975-ae50-45b9-aa43-27284e2ea728",
+            "fa5d6e5d-1b89-44fd-8cf3-36e81b4ce5a8",
+            "bc2c95df-2a52-47de-a9da-32c7ac9010c7",
+            "dc2e254e-2e87-468e-aed5-f9b38ea37ba2",
+            "668d37c9-312b-42b0-ade0-68ec88ac7cb5",
+            "31c4d33f-7285-4ba5-a6de-4a0c230fe240",
+            "9ac8d5e2-52cc-407b-8cc6-49527a674864",
+            "6bb87091-8054-43a0-8989-ec796ad637da"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 435608,
+          "duration": 458979,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -576,7 +576,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "5f868584-7ecc-4d03-861a-15296df5b005",
+      "uuid": "8c379fc0-c37d-4800-9099-4903a99fd452",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/001.e2e-login-com-sucesso-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/001.e2e-login-com-sucesso-BC.cy.js",
@@ -585,7 +585,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2b027c8c-58b1-45a8-a60e-0d2863b53bc6",
+          "uuid": "ac791933-732c-48a1-a7ab-8e1abde5548e",
           "title": "Buonny Check E2E - Login - credenciais válidas",
           "fullFile": "",
           "file": "",
@@ -596,29 +596,29 @@
               "title": "Buonny Check E2E - Login BC sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais válidas Buonny Check E2E - Login BC sucesso",
               "timedOut": null,
-              "duration": 15168,
+              "duration": 9894,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(Cypress.env(\"user_passwordBC\"), {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.url({\n  timeout: 40000\n}).should(\"include\", \"https://tstbuonnycheck.buonny.com.br/#/dashboard\");",
               "err": {},
-              "uuid": "c4a6d681-3f7b-407a-b3f7-5aa0213c7b70",
-              "parentUUID": "2b027c8c-58b1-45a8-a60e-0d2863b53bc6",
+              "uuid": "00a38db2-8bd8-4243-8f3d-c26a1bb6a83d",
+              "parentUUID": "ac791933-732c-48a1-a7ab-8e1abde5548e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c4a6d681-3f7b-407a-b3f7-5aa0213c7b70"
+            "00a38db2-8bd8-4243-8f3d-c26a1bb6a83d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15168,
+          "duration": 9894,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -634,7 +634,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "d70952fc-3a26-40a2-915d-b7aa8f734b1b",
+      "uuid": "2acd1238-9145-47d7-9188-dd4840c8e5b7",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/002.e2e-logout-com-sucesso-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/002.e2e-logout-com-sucesso-BC.cy.js",
@@ -643,7 +643,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3dc30a3e-c502-43a0-9f5c-59cecc719afa",
+          "uuid": "72eb019a-77d1-4096-85d1-514ce3388fb1",
           "title": "Buonny Check E2E - Login - Logout com sucesso",
           "fullFile": "",
           "file": "",
@@ -654,29 +654,29 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - Logout com sucesso sucesso",
               "timedOut": null,
-              "duration": 9471,
+              "duration": 10135,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(\".mat-menu-trigger > .mat-button-wrapper > .mat-icon\", {\n  timeout: 20000\n}).click();\ncy.get(\".mat-menu-content > :nth-child(3)\").click();\ncy.url({\n  timeout: 20000\n}).should(\"include\", \"https://tstbuonnycheck.buonny.com.br/#/signin\");",
               "err": {},
-              "uuid": "4aef6998-d647-432c-a355-e4e46a06fb7d",
-              "parentUUID": "3dc30a3e-c502-43a0-9f5c-59cecc719afa",
+              "uuid": "24a06fba-c2f8-4865-ba66-9209d87c2dd3",
+              "parentUUID": "72eb019a-77d1-4096-85d1-514ce3388fb1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4aef6998-d647-432c-a355-e4e46a06fb7d"
+            "24a06fba-c2f8-4865-ba66-9209d87c2dd3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9471,
+          "duration": 10135,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -692,7 +692,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ed11a739-7361-4ba8-93b7-2cca5a247a68",
+      "uuid": "9bda0211-163d-4ae2-8e54-a5234bf8fa9f",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/003.e2e-esqueci-minha-senha-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/003.e2e-esqueci-minha-senha-BC.cy.js",
@@ -701,7 +701,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4657c5c1-fdfd-4b91-bf7d-decf0d303b4a",
+          "uuid": "35a4112c-44e8-47b0-8c1a-22ef266eec63",
           "title": "Buonny Check E2E - Login - Redirecionamento para a recuperação de senha",
           "fullFile": "",
           "file": "",
@@ -712,29 +712,29 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - Redirecionamento para a recuperação de senha sucesso",
               "timedOut": null,
-              "duration": 9048,
+              "duration": 11721,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get('a[target=\"_blank\"]').invoke(\"removeAttr\", \"target\");\ncy.get(\"#mat-hint-0 > a\").click({\n  force: true\n});\ncy.origin(\"https://tstportal.buonny.com.br\", () => {\n  cy.url().should(\"include\", \"https://tstportal.buonny.com.br/portal/usuarios/esqueci_minha_senha\");\n});",
               "err": {},
-              "uuid": "96828dc0-53bc-4378-b7fa-8b37bee46a4b",
-              "parentUUID": "4657c5c1-fdfd-4b91-bf7d-decf0d303b4a",
+              "uuid": "d623c47d-0ade-4b15-9f30-ee23ff6d92ed",
+              "parentUUID": "35a4112c-44e8-47b0-8c1a-22ef266eec63",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "96828dc0-53bc-4378-b7fa-8b37bee46a4b"
+            "d623c47d-0ade-4b15-9f30-ee23ff6d92ed"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9048,
+          "duration": 11721,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -750,7 +750,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "700e8ec3-229b-4b5d-aeb1-84d4536fd0cf",
+      "uuid": "6f2a00a8-0b06-488e-b393-be685dcc3973",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/004.e2e-login-vazio-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/004.e2e-login-vazio-BC.cy.js",
@@ -759,7 +759,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "034d179b-b3fa-4267-a5eb-132a7131d06a",
+          "uuid": "f6738fee-790b-4888-98cf-2609e21ead55",
           "title": "Buonny Check E2E - Login - campos vazios",
           "fullFile": "",
           "file": "",
@@ -770,29 +770,29 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - campos vazios sucesso",
               "timedOut": null,
-              "duration": 6423,
+              "duration": 3914,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-1\").type(Cypress.env(\"user_passwordBC\"), {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.get(\"#mat-error-0\", {\n  timeout: 20000\n}).should(\"have.text\", \"Campo obrigatório.\").should(\"be.visible\");",
               "err": {},
-              "uuid": "f1b0a9c4-e2df-4592-a612-eabdc0fb5f38",
-              "parentUUID": "034d179b-b3fa-4267-a5eb-132a7131d06a",
+              "uuid": "a22dfa9c-c7a7-476f-96af-c1207ebc0c7b",
+              "parentUUID": "f6738fee-790b-4888-98cf-2609e21ead55",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f1b0a9c4-e2df-4592-a612-eabdc0fb5f38"
+            "a22dfa9c-c7a7-476f-96af-c1207ebc0c7b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6423,
+          "duration": 3914,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -808,7 +808,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "54f8f46a-dc65-4cce-aa71-e0f87a07bfc6",
+      "uuid": "01fff35c-2100-479c-bb99-5ec46390b0ce",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
@@ -817,7 +817,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "90d8fe94-eb4a-4edf-88a0-b6cb55825485",
+          "uuid": "d930ad0f-1d32-4a33-8455-1bc3a2198ab2",
           "title": "Buonny Check E2E - Login - credenciais inválidas'",
           "fullFile": "",
           "file": "",
@@ -828,7 +828,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais inválidas' sucesso",
               "timedOut": null,
-              "duration": 5432,
+              "duration": 6388,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -837,20 +837,20 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(`123`, {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.get(\".mat-error\", {\n  timeout: 20000\n}).should(\"have.text\", \"Usuário ou senha incorretos.\").should(\"be.visible\");",
               "err": {},
-              "uuid": "9582f5bb-c13f-4a6e-bfc6-38eb9f8b263c",
-              "parentUUID": "90d8fe94-eb4a-4edf-88a0-b6cb55825485",
+              "uuid": "a77cddff-2866-4a8e-b82c-8db76b402189",
+              "parentUUID": "d930ad0f-1d32-4a33-8455-1bc3a2198ab2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9582f5bb-c13f-4a6e-bfc6-38eb9f8b263c"
+            "a77cddff-2866-4a8e-b82c-8db76b402189"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5432,
+          "duration": 6388,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -866,7 +866,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ae51d263-19fc-43f6-9c41-01e5d5afa2da",
+      "uuid": "b1ea9b48-5cff-4618-811d-7f5f02a5c3e1",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/002 - E2E Inclusão de ficha/001.e2e-inclusão_ficha_com_sucesso_BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/002 - E2E Inclusão de ficha/001.e2e-inclusão_ficha_com_sucesso_BC.cy.js",
@@ -875,7 +875,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "83138271-6f2b-4ff6-a4d5-30ee74acfca7",
+          "uuid": "38d4fcbe-d4ab-4779-8595-ac5093eca460",
           "title": "Buonny Check E2E -Inclusão de ficha do profissional",
           "fullFile": "",
           "file": "",
@@ -886,29 +886,33 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E -Inclusão de ficha do profissional sucesso",
               "timedOut": null,
-              "duration": 96762,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 124237,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.get('[routerlink=\"/cadastro-ficha\"] > .menu-label').click({\n  timeout: 30000\n});\ncy.get(\"#mat-select-0\").click();\ncy.get(\".mat-option\").contains(/BUONNY CHECK(?! ST)/).click();\ncy.get(\":nth-child(3) > .nome > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"Buonny Projetos e Serviços LTDA\");\ncy.get(\":nth-child(3) > .mat-form-field-type-mat-select > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/TELEFONE/).click();\ncy.get(\":nth-child(3) > .dados > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"11922059878\");\ncy.get(\":nth-child(2) > .nome > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"Buonny Projetos e Serviços LTDA\");\ncy.get(\".dados-contato > :nth-child(2) > .mat-form-field-type-mat-select > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option-text\").contains(/E-MAIL/).click();\ncy.get(\":nth-child(2) > .dados > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"TESTES.AUTOMATIZADOS@buonny.com.br\");\ncy.get(\"#cdk-step-content-0-0 > form.ng-star-inserted > .mt-2 > .mat-focus-indicator > .mat-button-wrapper\").click();\ncy.get(\".ng-invalid.ng-star-inserted > :nth-child(2) > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/AGREGADO/).click();\ncy.get(\"#mat-radio-25\").click();\ncy.get(\"form.ng-untouched > .d-flex > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"478.535.513-12\");\ncy.wait(5000);\ncy.get('.mat-form-field.ng-tns-c106-85 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix').clear().type(\"Ricardo Monteiro Alves\");\n//cy.get(\"#mat-input-36\", { timeout: 10000 }).type(\"SONIA REGINA PERIN\");\ncy.get('body').then($body => {\n  if ($body.find('#cdk-step-content-0-1 > form.ng-star-inserted > .dados-contato > legend > .mat-focus-indicator > .mat-button-wrapper > span').length > 0) {\n    cy.get('#cdk-step-content-0-1 > form.ng-star-inserted > .dados-contato > legend > .mat-focus-indicator > .mat-button-wrapper > span').click();\n  }\n});\ncy.get(\"#mat-select-value-49 > .mat-select-placeholder\").click();\ncy.get(\".mat-option\").contains(/COMERCIAL/).click();\ncy.get(\"#mat-input-37\").type(\"11958785874\");\ncy.get('#mat-input-38').type(\"TESTES AUTOMATIZADOS\");\ncy.get(\"#cdk-step-content-0-1 > form.ng-star-inserted > .mt-2 > .mat-stepper-next\", {\n  timeout: 10000\n}).click();\ncy.get(\"#cdk-step-content-0-2 > form.ng-star-inserted > .mt-2 > .mat-stepper-next\", {\n  timeout: 10000\n}).click();\ncy.get(\"form.ng-untouched > :nth-child(6) > .celular-profissional > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"(27) 99692-7855\");\ncy.get(\"#cdk-step-content-0-3 > form.ng-untouched > .mt-2 > .mat-stepper-next\").click();\ncy.get(\"#cdk-step-content-0-4 > .ng-star-inserted > .mt-2 > .mat-stepper-next\").click();\ncy.get(\"#mat-input-20\").type(\"1000\");\ncy.get(\"#cdk-step-content-0-5 > form.ng-star-inserted > .mt-2 > .mat-stepper-next\").click();\ncy.get(\"#mat-radio-13\").click();\ncy.get(\"#mat-radio-15\").click();\ncy.get(\"#mat-radio-19\").click();\ncy.get(\"#mat-radio-21\").click();\ncy.get(\"#mat-radio-23\").click();\ncy.get(\"#mat-radio-11\").click();\ncy.get(\"#cdk-step-content-0-6 > .ng-star-inserted.ng-dirty > .mt-2 > .mat-raised-button > .mat-button-wrapper\").click();\ncy.get(\".mat-basic > .mat-button-wrapper\").click();\ncy.get(\".mat-simple-snackbar > span\").should($span => {\n  const text = $span.text();\n  expect(text).to.be.oneOf([\"Ficha cadastrada com sucesso.\", \"O profissional está em pesquisa. Aguarde o final das pesquisas.\"]);\n});",
-              "err": {},
-              "uuid": "195526c3-4660-4f4e-9839-3194f5ddc29b",
-              "parentUUID": "83138271-6f2b-4ff6-a4d5-30ee74acfca7",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.mat-basic > .mat-button-wrapper`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.mat-basic > .mat-button-wrapper`, but never found it.\n    at Context.eval (webpack://test/./cypress/e2e/web/002 - E2E Buonny Check/002 - E2E Inclusão de ficha/001.e2e-inclusão_ficha_com_sucesso_BC.cy.js:137:11)",
+                "diff": null
+              },
+              "uuid": "9d09d0a7-7c03-432a-9c35-4ea2d9524899",
+              "parentUUID": "38d4fcbe-d4ab-4779-8595-ac5093eca460",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "195526c3-4660-4f4e-9839-3194f5ddc29b"
+          "passes": [],
+          "failures": [
+            "9d09d0a7-7c03-432a-9c35-4ea2d9524899"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 96762,
+          "duration": 124237,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -924,7 +928,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "9838951a-4d14-4ecb-924e-147bdad5c02d",
+      "uuid": "e6d82ef6-0788-4c5c-8f4a-94bc08e4c88a",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/001.e2e-consulta-sucesso_BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/001.e2e-consulta-sucesso_BC.cy.js",
@@ -933,7 +937,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d179d1e0-e8e2-4b14-b7df-554fab87f5c7",
+          "uuid": "3ebca046-cd12-472e-adb2-a80b139507e9",
           "title": "030 Buonny Check E2E - Consulta de profissional - Casos de sucesso",
           "fullFile": "",
           "file": "",
@@ -944,7 +948,7 @@
               "title": "Consultar status do profissional, com sucesso",
               "fullTitle": "030 Buonny Check E2E - Consulta de profissional - Casos de sucesso Consultar status do profissional, com sucesso",
               "timedOut": null,
-              "duration": 30664,
+              "duration": 32861,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -953,20 +957,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/consulta-profissional\"] > .menu-label').should(\"be.visible\").click({\n  timeout: 30000\n});\ncy.get(\"#mat-select-0\").click();\ncy.get(\".mat-option\").contains(/BUONNY CHECK(?! ST)/).click();\ncy.get(\"form.ng-untouched > .d-flex > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"646.146.860-95\");\ncy.get(\".mat-form-field.ng-tns-c106-13 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"TST1A23\");\ncy.get(\".tipo-carga > .mat-form-field-wrapper > .mat-form-field-flex\").click();\ncy.get(\".mat-option\").contains(/AÇO/).click();\ncy.get(\".valor > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.contains(\"span.mat-option-text\", /De R\\$.*0,01.*100\\.000,00/).click();\ncy.get(\":nth-child(1) > .d-flex > .estado > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/SP/).click();\ncy.get(\":nth-child(6) > :nth-child(1) > .d-flex > .mat-form-field-type-mat-input > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"Adamantina\");\ncy.get(\":nth-child(2) > .d-flex > .estado > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/SP/).click();\ncy.get(\":nth-child(2) > .d-flex > .mat-form-field-type-mat-input > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"Adamantina\");\ncy.get(\".button-default > .mat-button-wrapper\").click();\ncy.get(\".mr-3 > :nth-child(1) > :nth-child(1) > .ml-2\", {\n  timeout: 30000\n}).invoke(\"text\").should(\"match\", /PERFIL ADEQUADO AO RISCO|PERFIL ADEQUADO AO RISCO POR PRAZO|PERFIL COM INSUFICIÊNCIA DE DADOS|PERFIL DIVERGENTE|PERFIL EXPIRADO|EM ANALISE/);",
               "err": {},
-              "uuid": "372af416-de0b-4752-891f-bbd19b6d16b0",
-              "parentUUID": "d179d1e0-e8e2-4b14-b7df-554fab87f5c7",
+              "uuid": "2f346162-ed6d-448f-9f16-07b3b4c5e9f5",
+              "parentUUID": "3ebca046-cd12-472e-adb2-a80b139507e9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "372af416-de0b-4752-891f-bbd19b6d16b0"
+            "2f346162-ed6d-448f-9f16-07b3b4c5e9f5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 30664,
+          "duration": 32861,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -982,7 +986,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "01cdc03c-c607-4a62-91d0-302279b7a707",
+      "uuid": "c121ac9f-0341-4677-93f5-45b755e5e048",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/002.e2e-consulta-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/002.e2e-consulta-erros-BC.cy.js",
@@ -991,7 +995,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c3bb450a-b5d0-4cbd-8724-2983b880bd7f",
+          "uuid": "18636a20-f4c5-4351-912a-4adc49f9e38f",
           "title": "Buonny Check E2E - Consulta de profissional - Validação de Erros",
           "fullFile": "",
           "file": "",
@@ -1002,7 +1006,7 @@
               "title": "Campos obrigatórios vazios",
               "fullTitle": "Buonny Check E2E - Consulta de profissional - Validação de Erros Campos obrigatórios vazios",
               "timedOut": null,
-              "duration": 14517,
+              "duration": 17569,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1011,20 +1015,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/consulta-profissional\"] > .menu-label').should(\"be.visible\").click({\n  timeout: 30000\n});\ncy.wait(5000);\ncy.get(\".mat-card-actions > :nth-child(1) > .mat-button-wrapper\").click({\n  force: true\n});\ncy.get(\".button-default\").click({\n  force: true\n});\ncy.get(\"mat-error:visible\").should(\"have.length\", 8).each($error => {\n  cy.wrap($error).should(\"contain.text\", \"Campo obrigatório\");\n});",
               "err": {},
-              "uuid": "a1bc1d9f-4d78-4881-921b-b7a4dede73f0",
-              "parentUUID": "c3bb450a-b5d0-4cbd-8724-2983b880bd7f",
+              "uuid": "8cd98f90-061f-42c7-9ce0-ab35fe2a1ff1",
+              "parentUUID": "18636a20-f4c5-4351-912a-4adc49f9e38f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a1bc1d9f-4d78-4881-921b-b7a4dede73f0"
+            "8cd98f90-061f-42c7-9ce0-ab35fe2a1ff1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14517,
+          "duration": 17569,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -1040,7 +1044,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "2b730a94-b42c-437a-aa6a-23f7b388fe76",
+      "uuid": "876ed885-7107-4aea-aa6e-724631f0f608",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
@@ -1049,7 +1053,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5f76d156-5c49-44d3-9de2-5e86ada812da",
+          "uuid": "c6ba17ec-a24c-4479-ad14-39e91a74a210",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso",
           "fullFile": "",
           "file": "",
@@ -1060,7 +1064,7 @@
               "title": "Avançar,preenchendo todos campos obrigatórios",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso Avançar,preenchendo todos campos obrigatórios",
               "timedOut": null,
-              "duration": 59659,
+              "duration": 61420,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1069,20 +1073,20 @@
               "context": null,
               "code": "const entradas = {\n  codCliente: \"87906\",\n  transportador: \"BUONNY PROJETOS E SERVICOS\",\n  cpfMotorista: \"64614686095\",\n  cpfAjudante: \"075.421.058-84\",\n  placaTeste: \"TST1A23\"\n};\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(entradas.codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TViagViagem2CodigoTransportador\", {\n  timeout: 10000\n}).select(entradas.transportador);\ncy.get(\"#TMotoMotorista2MotoCpf\").type(entradas.cpfMotorista);\ncy.get(\"#TMotoMotorista2Tipo\").select(\"CARRETEIRO\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#TMotoMotorista2MotoCpfAjudante\").type(entradas.cpfAjudante);\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TVeicVeiculo20VeicPlaca\").type(entradas.placaTeste);\ncy.wait(5000);\ncy.get(\"#consulta-incluir\").click();\ncy.url().should(\"include\", \"/SolicitacoesMonitoramento2/incluir/N/N/\");",
               "err": {},
-              "uuid": "bbea7f93-1795-4bf4-bb15-e41eed12c0af",
-              "parentUUID": "5f76d156-5c49-44d3-9de2-5e86ada812da",
+              "uuid": "6b5c0b49-9a3b-4d40-bb5b-a7ee31d6d787",
+              "parentUUID": "c6ba17ec-a24c-4479-ad14-39e91a74a210",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bbea7f93-1795-4bf4-bb15-e41eed12c0af"
+            "6b5c0b49-9a3b-4d40-bb5b-a7ee31d6d787"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 59659,
+          "duration": 61420,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -1098,7 +1102,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "950dfaae-0ae8-4eea-901c-e93041faffd8",
+      "uuid": "15edbe54-f009-4d47-a305-233cd77ada87",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
@@ -1107,7 +1111,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0982e1c7-440a-494e-abe2-cbce207d6075",
+          "uuid": "99087b33-190b-4ce3-9ef6-d484c42403ad",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios",
           "fullFile": "",
           "file": "",
@@ -1118,7 +1122,7 @@
               "title": "Avançar sem preencher campos obrigatórios e validar erros",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios Avançar sem preencher campos obrigatórios e validar erros",
               "timedOut": null,
-              "duration": 38748,
+              "duration": 47099,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1127,20 +1131,20 @@
               "context": null,
               "code": "const codCliente = \"87906\";\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"Selecione uma Gerenciadora\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Transportador não selecionado\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o tipo do profissional\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o veículo\").and(\"be.visible\");\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"Selecione uma Gerenciadora\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");",
               "err": {},
-              "uuid": "a77bec3a-4054-408e-b3bb-d733072c856f",
-              "parentUUID": "0982e1c7-440a-494e-abe2-cbce207d6075",
+              "uuid": "139f17cd-30aa-43de-a0f6-46a19fa1f339",
+              "parentUUID": "99087b33-190b-4ce3-9ef6-d484c42403ad",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a77bec3a-4054-408e-b3bb-d733072c856f"
+            "139f17cd-30aa-43de-a0f6-46a19fa1f339"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 38748,
+          "duration": 47099,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -1156,142 +1160,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f306627a-f95a-42fd-9a1d-9befedfacd2b",
-      "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ed7bacac-678d-467d-8ae1-0e91dbb5f5a9",
-          "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "gerar sm, preenchendo todos os campos obrigatórios",
-              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM gerar sm, preenchendo todos os campos obrigatórios",
-              "timedOut": null,
-              "duration": 165500,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.consultaParaIncluirViaAPI();\ncy.get(\"#TViagViagem2ViagTtraCodigo\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\", {\n  timeout: 10000\n}).should(\"exist\").click({\n  force: true\n});\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 20000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\", {\n  timeout: 10000\n}).type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\", {\n  timeout: 10000\n}).type(horaSm);\ncy.get(\"#Itinerario0DataPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(dataChegadaSm);\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#Itinerario0HoraPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(\"13:00\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\", {\n  timeout: 10000\n}).select(\"CACAU\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\", {\n  timeout: 10000\n}).type(\"99,00\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\".help-block.alert-success.form-actions.well\", {\n  timeout: 65000\n}).should(\"be.visible\").should(\"contain.text\", \"Os dados informados foram armazenados com sucesso para a SM\").invoke(\"text\").then(text => {\n  const match = text.match(/Nº (\\d+)/);\n  if (match) {\n    numeroSM = match[1];\n    cy.log(\"Número da SM:\", numeroSM);\n  } else {\n    cy.log(\"Número não encontrado!\");\n  }\n});\ncy.get('.help-block', {\n  timeout: 15000\n}).should('be.visible').invoke('text').then(texto => {\n  // Exemplo de texto: \"Os dados informados foram armazenados com sucesso para a SM de Nº 31693452!\"\n  const regex = /SM\\s*(?:de)?\\s*(?:Nº|número)?\\s*(\\d+)/i; // Captura o número após 'SM de Nº'\n  const match = texto.match(regex);\n  if (match) {\n    const numeroSM = match[1]; // extrai apenas o número\n    cy.log('Número SM capturado:', numeroSM);\n    // Salva o arquivo JSON no fixtures\n    cy.writeFile('cypress/fixtures/numeroSM.json', {\n      numeroSM\n    });\n  } else {\n    throw new Error(`Número SM não encontrado na mensagem: \"${texto}\"`);\n  }\n});",
-              "err": {},
-              "uuid": "942ba4c5-7638-4b73-8d70-fc97409f3e50",
-              "parentUUID": "ed7bacac-678d-467d-8ae1-0e91dbb5f5a9",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "942ba4c5-7638-4b73-8d70-fc97409f3e50"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 165500,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "ef7cfda3-9751-4f31-8b98-42c450f7567c",
-      "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/002.e2e-inclusao-sm-erros-tela-002.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/002.e2e-inclusao-sm-erros-tela-002.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "9728c97f-9e6e-46bd-908d-66fa12b12b64",
-          "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "avançar sem preencher nenhum dos campos",
-              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios avançar sem preencher nenhum dos campos",
-              "timedOut": null,
-              "duration": 63991,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\":nth-child(1) > .select > .help-block\").should(\"have.text\", \"Tipo de transporte não informado\").and(\"be.visible\");\ncy.get(\".span4 > :nth-child(1) > .control-group > .help-block\").should(\"have.text\", \"Dados do Alvo 1 Incompletos\").and(\"be.visible\");\ncy.get(\".span12 > .help-block\").should(\"have.text\", \"Informe a data e hora prevista de inicio da viagem\").and(\"be.visible\");\ncy.get(\".input-alvo > :nth-child(1) > .control-group > .help-block\").should(\"have.text\", \"Informe o destino da SM\").and(\"be.visible\");",
-              "err": {},
-              "uuid": "5ddbd69e-3970-49c8-be57-c130037c53f8",
-              "parentUUID": "9728c97f-9e6e-46bd-908d-66fa12b12b64",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "avançar preenchendo \"Tipo de transporte, \"Rota\", \"Data de inicío\" e \"Hora\"",
-              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios avançar preenchendo \"Tipo de transporte, \"Rota\", \"Data de inicío\" e \"Hora\"",
-              "timedOut": null,
-              "duration": 140608,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.get(\"#TViagViagem2ViagTtraCodigo\").should(\"exist\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\").should(\"exist\").click({\n  force: true\n});\ncy.get('#TRotaRotaDescricao').type(\"2615910\");\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 10000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 100000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\").type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\").type(\"13:00\");\ncy.get('#Itinerario0DataPrevisaoDeChegada').type(dataSm);\ncy.get('#Itinerario0HoraPrevisaoDeChegada').type(\"14:00\");\ncy.get('#Itinerario0DadosDaCargaCarga0Nf').type(\"1234\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get('.span9 > .form-actions').should(\"have.text\", \"\\n\\t\\t\\t\\tErros:\\n\\t\\t\\t\\tRegra de Aceite - Regra para Valor Máximo não localizada \\t\\t\\t\\t\\n\\t\\t\\t\").and(\"be.visible\");",
-              "err": {},
-              "uuid": "daba081c-d5a1-4a1d-93d2-166f4aafc8b2",
-              "parentUUID": "9728c97f-9e6e-46bd-908d-66fa12b12b64",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "5ddbd69e-3970-49c8-be57-c130037c53f8",
-            "daba081c-d5a1-4a1d-93d2-166f4aafc8b2"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 204599,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "4f286f13-2867-4bd0-9e89-107dac116084",
+      "uuid": "b00c63ab-fd46-42d3-8bab-1218d9b9f4ef",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/001.e2e-alteracao-placa-motorista.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/001.e2e-alteracao-placa-motorista.cy.js",
@@ -1300,7 +1169,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3f404c14-e3d0-4e75-bef1-b5e6a1806347",
+          "uuid": "aef63598-0d2c-468a-8f4f-4fcf5e288fe3",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista",
           "fullFile": "",
           "file": "",
@@ -1311,29 +1180,33 @@
               "title": "Alterar a Placa e Motorista da SM com sucesso!",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista Alterar a Placa e Motorista da SM com sucesso!",
               "timedOut": null,
-              "duration": 54072,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 65033,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\":nth-child(3) > .btn\").click();\n  cy.get(\"#Recebsm0Placa\").then(campoPlaca => {\n    const valorAtual = campoPlaca.val();\n    if (valorAtual === \"HCJ6C26\") {\n      cy.get(\"#Recebsm0Placa\").clear().type(\"ARM9515\");\n      cy.get(\":nth-child(3) > .row-fluid\").click();\n    } else if (valorAtual === \"ARM9515\") {\n      cy.get(\"#Recebsm0Placa\").clear().type(\"HCJ6C26\");\n      cy.get(\":nth-child(3) > .row-fluid\").click();\n    } else {\n      throw new Error(`Valor inesperado no campo placa: \"${valorAtual}\"`);\n    }\n  });\n  cy.get(\"#TPfisPessoaFisicaPfisCpf\").then(campoCPF => {\n    const valorAtual = campoCPF.val();\n    if (valorAtual === \"04488742530\") {\n      cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"01180160169\");\n      cy.get(\":nth-child(5) > .row-fluid\").click();\n    } else if (valorAtual === \"01180160169\") {\n      cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"04488742530\");\n      cy.get(\":nth-child(5) > .row-fluid\").click();\n    } else {\n      throw new Error(`Valor inesperado no campo CPF: \"${valorAtual}\"`);\n    }\n  });\n  cy.wait(5000);\n  cy.get(\"input.btn\").click();\n  cy.get(\".alert\").should(\"contain\", \"Alteração realizada com sucesso\");\n});",
-              "err": {},
-              "uuid": "fe2e66cf-8397-4a84-9276-2803b7e978e6",
-              "parentUUID": "3f404c14-e3d0-4e75-bef1-b5e6a1806347",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: expected '<div.alert.alert-error>' to contain 'Alteração realizada com sucesso'",
+                "estack": "AssertionError: Timed out retrying after 30000ms: expected '<div.alert.alert-error>' to contain 'Alteração realizada com sucesso'\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/001.e2e-alteracao-placa-motorista.cy.js:53:29)\n    at getRet (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:141671:19)",
+                "diff": null
+              },
+              "uuid": "661f5213-40e6-4162-a895-39a606773ee1",
+              "parentUUID": "aef63598-0d2c-468a-8f4f-4fcf5e288fe3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "fe2e66cf-8397-4a84-9276-2803b7e978e6"
+          "passes": [],
+          "failures": [
+            "661f5213-40e6-4162-a895-39a606773ee1"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 54072,
+          "duration": 65033,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -1349,7 +1222,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f56d5b8c-3aaa-4bc9-9aed-4f8877f9c042",
+      "uuid": "4d3bd66e-9d07-4aea-9c20-422cb2e732fb",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/002.e2e-alteracao-placa-motorista-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/002.e2e-alteracao-placa-motorista-erros.cy.js",
@@ -1358,7 +1231,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7c835bdb-52c4-4971-8a89-c3d457bc5253",
+          "uuid": "e15ceef7-dacd-46da-a3f7-167258ae569b",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros",
           "fullFile": "",
           "file": "",
@@ -1369,7 +1242,7 @@
               "title": "Validação do Campo 'Cliente' e 'SM' na Alteração de Placa, Motorista e Categoria  ",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros Validação do Campo 'Cliente' e 'SM' na Alteração de Placa, Motorista e Categoria  ",
               "timedOut": null,
-              "duration": 18198,
+              "duration": 17772,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1378,8 +1251,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\":nth-child(3) > .btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Cliente não informado\");\ncy.get(\"#TViagViagemCodigoCliente\").type(\"543\");\ncy.get(\":nth-child(3) > .btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"SM não informada\");",
               "err": {},
-              "uuid": "55e28711-cbc4-4d77-907a-b92ebfe192f1",
-              "parentUUID": "7c835bdb-52c4-4971-8a89-c3d457bc5253",
+              "uuid": "317024b2-4fed-480f-823d-4f49120dff5d",
+              "parentUUID": "e15ceef7-dacd-46da-a3f7-167258ae569b",
               "isHook": false,
               "skipped": false
             },
@@ -1387,7 +1260,7 @@
               "title": "Tentar avançar com uma Placa e CPF não registrados, validando mensagens de erro",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros Tentar avançar com uma Placa e CPF não registrados, validando mensagens de erro",
               "timedOut": null,
-              "duration": 29179,
+              "duration": 32204,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1396,21 +1269,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\":nth-child(3) > .btn\").click();\n  cy.wait(5000);\n  cy.get(\"#Recebsm0Placa\").clear().type(\"ebj8484\");\n  cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"10454578745\");\n  cy.get(\"input.btn\").click();\n  cy.get('[data-seq=\"0\"] > :nth-child(1) > .control-group > .help-block').should(\"contain\", \"O veículo informado é invalido\");\n  cy.get(\".row-fluid > .error > .help-block\").should(\"contain\", \"Informe o Motorista\");\n});",
               "err": {},
-              "uuid": "9670ea55-6210-4bd9-8a6a-58264b1406a3",
-              "parentUUID": "7c835bdb-52c4-4971-8a89-c3d457bc5253",
+              "uuid": "c6b63722-e791-405f-8c99-4b344f996617",
+              "parentUUID": "e15ceef7-dacd-46da-a3f7-167258ae569b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "55e28711-cbc4-4d77-907a-b92ebfe192f1",
-            "9670ea55-6210-4bd9-8a6a-58264b1406a3"
+            "317024b2-4fed-480f-823d-4f49120dff5d",
+            "c6b63722-e791-405f-8c99-4b344f996617"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 47377,
+          "duration": 49976,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -1426,7 +1299,142 @@
       "_timeout": 2000
     },
     {
-      "uuid": "21290705-531a-4829-a65e-c12949540b97",
+      "uuid": "6a29cd08-27c4-4b96-b441-72b6125253c8",
+      "title": "",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b64ab48-6a12-43d7-8bcf-5fd541e7fc02",
+          "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "gerar sm, preenchendo todos os campos obrigatórios",
+              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM gerar sm, preenchendo todos os campos obrigatórios",
+              "timedOut": null,
+              "duration": 163741,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consultaParaIncluirViaAPI();\ncy.get(\"#TViagViagem2ViagTtraCodigo\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\", {\n  timeout: 10000\n}).should(\"exist\").click({\n  force: true\n});\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 20000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\", {\n  timeout: 10000\n}).type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\", {\n  timeout: 10000\n}).type(horaSm);\ncy.get(\"#Itinerario0DataPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(dataChegadaSm);\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#Itinerario0HoraPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(\"13:00\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\", {\n  timeout: 10000\n}).select(\"CACAU\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\", {\n  timeout: 10000\n}).type(\"99,00\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\".help-block.alert-success.form-actions.well\", {\n  timeout: 65000\n}).should(\"be.visible\").should(\"contain.text\", \"Os dados informados foram armazenados com sucesso para a SM\").invoke(\"text\").then(text => {\n  const match = text.match(/Nº (\\d+)/);\n  if (match) {\n    numeroSM = match[1];\n    cy.log(\"Número da SM:\", numeroSM);\n  } else {\n    cy.log(\"Número não encontrado!\");\n  }\n});\ncy.get('.help-block', {\n  timeout: 15000\n}).should('be.visible').invoke('text').then(texto => {\n  // Exemplo de texto: \"Os dados informados foram armazenados com sucesso para a SM de Nº 31693452!\"\n  const regex = /SM\\s*(?:de)?\\s*(?:Nº|número)?\\s*(\\d+)/i; // Captura o número após 'SM de Nº'\n  const match = texto.match(regex);\n  if (match) {\n    const numeroSM = match[1]; // extrai apenas o número\n    cy.log('Número SM capturado:', numeroSM);\n    // Salva o arquivo JSON no fixtures\n    cy.writeFile('cypress/fixtures/numeroSM.json', {\n      numeroSM\n    });\n  } else {\n    throw new Error(`Número SM não encontrado na mensagem: \"${texto}\"`);\n  }\n});",
+              "err": {},
+              "uuid": "fd22682f-6c0c-4e1b-89c8-da07b3a59ea4",
+              "parentUUID": "7b64ab48-6a12-43d7-8bcf-5fd541e7fc02",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fd22682f-6c0c-4e1b-89c8-da07b3a59ea4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 163741,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a30701ef-fd0e-41e6-bb39-a8477d6749dd",
+      "title": "",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/002.e2e-inclusao-sm-erros-tela-002.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/002.e2e-inclusao-sm-erros-tela-002.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "89920f64-d461-4203-8c18-c684940046b6",
+          "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "avançar sem preencher nenhum dos campos",
+              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios avançar sem preencher nenhum dos campos",
+              "timedOut": null,
+              "duration": 67854,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\":nth-child(1) > .select > .help-block\").should(\"have.text\", \"Tipo de transporte não informado\").and(\"be.visible\");\ncy.get(\".span4 > :nth-child(1) > .control-group > .help-block\").should(\"have.text\", \"Dados do Alvo 1 Incompletos\").and(\"be.visible\");\ncy.get(\".span12 > .help-block\").should(\"have.text\", \"Informe a data e hora prevista de inicio da viagem\").and(\"be.visible\");\ncy.get(\".input-alvo > :nth-child(1) > .control-group > .help-block\").should(\"have.text\", \"Informe o destino da SM\").and(\"be.visible\");",
+              "err": {},
+              "uuid": "bc2816c2-8894-4d54-9b82-29f6cc1e7155",
+              "parentUUID": "89920f64-d461-4203-8c18-c684940046b6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "avançar preenchendo \"Tipo de transporte, \"Rota\", \"Data de inicío\" e \"Hora\"",
+              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios avançar preenchendo \"Tipo de transporte, \"Rota\", \"Data de inicío\" e \"Hora\"",
+              "timedOut": null,
+              "duration": 153992,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#TViagViagem2ViagTtraCodigo\").should(\"exist\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\").should(\"exist\").click({\n  force: true\n});\ncy.get('#TRotaRotaDescricao').type(\"2615910\");\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 10000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 100000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\").type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\").type(\"13:00\");\ncy.get('#Itinerario0DataPrevisaoDeChegada').type(dataSm);\ncy.get('#Itinerario0HoraPrevisaoDeChegada').type(\"14:00\");\ncy.get('#Itinerario0DadosDaCargaCarga0Nf').type(\"1234\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get('.span9 > .form-actions').should(\"have.text\", \"\\n\\t\\t\\t\\tErros:\\n\\t\\t\\t\\tRegra de Aceite - Regra para Valor Máximo não localizada \\t\\t\\t\\t\\n\\t\\t\\t\").and(\"be.visible\");",
+              "err": {},
+              "uuid": "92b6379a-f02a-4dcc-8a07-f01dec6d2312",
+              "parentUUID": "89920f64-d461-4203-8c18-c684940046b6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bc2816c2-8894-4d54-9b82-29f6cc1e7155",
+            "92b6379a-f02a-4dcc-8a07-f01dec6d2312"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 221846,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "21f2f472-450f-4617-9633-3ed5c6b66679",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
@@ -1435,7 +1443,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1bd56e91-26e1-4d5f-ae0e-d41b6ca9b9f7",
+          "uuid": "9505c687-16c6-4357-b1bd-2f0f7d7db3aa",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários",
           "fullFile": "",
           "file": "",
@@ -1446,33 +1454,29 @@
               "title": "Alteração de Nota Fiscal e Produto na SM",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alteração de Nota Fiscal e Produto na SM",
               "timedOut": null,
-              "duration": 71364,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 50193,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-list-alt\", {\n    timeout: 20000\n  }).click();\n  cy.get('[id^=\"Itinerario\"][id$=\"DataPrevisaoDeChegada\"]').type(`${dataChegadaSm}`, {\n    force: true\n  });\n  cy.get(\"#Itinerario0HoraPrevisaoDeChegada\").clear({\n    force: true\n  }).type(horaSm);\n  cy.get(\"#Itinerario0DadosDaCargaCarga0Nf\").clear({\n    force: true\n  }).type(\"123\");\n  cy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\").select(\"CACAU\", {\n    force: true\n  });\n  cy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\").clear({\n    force: true\n  }).type(\"5267\");\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".alert\").contains(\"Os dados informados foram armazenados com sucesso!\");\n});",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Os dados informados foram armazenados com sucesso!' within the element: <div.alert.alert-error> but never did.",
-                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Os dados informados foram armazenados com sucesso!' within the element: <div.alert.alert-error> but never did.\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js:50:29)\n    at getRet (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:141671:19)",
-                "diff": null
-              },
-              "uuid": "2c023588-3d49-402e-b33f-e3d2c4647521",
-              "parentUUID": "1bd56e91-26e1-4d5f-ae0e-d41b6ca9b9f7",
+              "err": {},
+              "uuid": "a7d3ab60-7744-486d-bbdd-b4537a724a6a",
+              "parentUUID": "9505c687-16c6-4357-b1bd-2f0f7d7db3aa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "2c023588-3d49-402e-b33f-e3d2c4647521"
+          "passes": [
+            "a7d3ab60-7744-486d-bbdd-b4537a724a6a"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 71364,
+          "duration": 50193,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -1488,7 +1492,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "53170888-20b1-4cc1-8c55-211d5c76724d",
+      "uuid": "2508cdea-63e5-4355-b55b-f2e74a0ceff4",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
@@ -1497,7 +1501,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6d1e34c5-3c9e-4a26-9595-61520207c174",
+          "uuid": "4c9d2c72-afe4-4c33-b038-17f01d88b266",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros",
           "fullFile": "",
           "file": "",
@@ -1508,7 +1512,7 @@
               "title": "Validação do campo 'Cliente', na alteração de itinerários",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros Validação do campo 'Cliente', na alteração de itinerários",
               "timedOut": null,
-              "duration": 11365,
+              "duration": 15017,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1517,8 +1521,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\"input.btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Informe um cliente\");",
               "err": {},
-              "uuid": "c0fea0e4-ae2b-4e0e-9626-2ba6c1ac3f69",
-              "parentUUID": "6d1e34c5-3c9e-4a26-9595-61520207c174",
+              "uuid": "58cb9cc3-bdf6-404b-b073-3d8b661fd414",
+              "parentUUID": "4c9d2c72-afe4-4c33-b038-17f01d88b266",
               "isHook": false,
               "skipped": false
             },
@@ -1526,7 +1530,7 @@
               "title": "lnclusão de Itinerários, validação do campo 'Local Parada'",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros lnclusão de Itinerários, validação do campo 'Local Parada'",
               "timedOut": null,
-              "duration": 35983,
+              "duration": 36801,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -1535,21 +1539,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-globe\", {\n    timeout: 10000\n  }).click();\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".help-block\").should(\"contain\", \"Informe o destino da SM\");\n});",
               "err": {},
-              "uuid": "00d0f6a7-aa89-4087-89de-0738154bd220",
-              "parentUUID": "6d1e34c5-3c9e-4a26-9595-61520207c174",
+              "uuid": "97f22b32-51ba-4458-b154-01e4f3b9aefd",
+              "parentUUID": "4c9d2c72-afe4-4c33-b038-17f01d88b266",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c0fea0e4-ae2b-4e0e-9626-2ba6c1ac3f69",
-            "00d0f6a7-aa89-4087-89de-0738154bd220"
+            "58cb9cc3-bdf6-404b-b073-3d8b661fd414",
+            "97f22b32-51ba-4458-b154-01e4f3b9aefd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 47348,
+          "duration": 51818,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-14T12:09:58.034Z",
-    "end": "2025-10-14T12:10:46.092Z",
-    "duration": 48058,
+    "start": "2025-10-14T19:12:55.599Z",
+    "end": "2025-10-14T19:13:47.928Z",
+    "duration": 52329,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "53170888-20b1-4cc1-8c55-211d5c76724d",
+      "uuid": "2508cdea-63e5-4355-b55b-f2e74a0ceff4",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6d1e34c5-3c9e-4a26-9595-61520207c174",
+          "uuid": "4c9d2c72-afe4-4c33-b038-17f01d88b266",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validação do campo 'Cliente', na alteração de itinerários",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros Validação do campo 'Cliente', na alteração de itinerários",
               "timedOut": null,
-              "duration": 11365,
+              "duration": 15017,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\"input.btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Informe um cliente\");",
               "err": {},
-              "uuid": "c0fea0e4-ae2b-4e0e-9626-2ba6c1ac3f69",
-              "parentUUID": "6d1e34c5-3c9e-4a26-9595-61520207c174",
+              "uuid": "58cb9cc3-bdf6-404b-b073-3d8b661fd414",
+              "parentUUID": "4c9d2c72-afe4-4c33-b038-17f01d88b266",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "lnclusão de Itinerários, validação do campo 'Local Parada'",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros lnclusão de Itinerários, validação do campo 'Local Parada'",
               "timedOut": null,
-              "duration": 35983,
+              "duration": 36801,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-globe\", {\n    timeout: 10000\n  }).click();\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".help-block\").should(\"contain\", \"Informe o destino da SM\");\n});",
               "err": {},
-              "uuid": "00d0f6a7-aa89-4087-89de-0738154bd220",
-              "parentUUID": "6d1e34c5-3c9e-4a26-9595-61520207c174",
+              "uuid": "97f22b32-51ba-4458-b154-01e4f3b9aefd",
+              "parentUUID": "4c9d2c72-afe4-4c33-b038-17f01d88b266",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c0fea0e4-ae2b-4e0e-9626-2ba6c1ac3f69",
-            "00d0f6a7-aa89-4087-89de-0738154bd220"
+            "58cb9cc3-bdf6-404b-b073-3d8b661fd414",
+            "97f22b32-51ba-4458-b154-01e4f3b9aefd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 47348,
+          "duration": 51818,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
