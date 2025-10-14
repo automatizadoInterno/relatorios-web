@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-14T18:55:03.150Z",
-    "end": "2025-10-14T18:55:21.652Z",
-    "duration": 18502,
+    "start": "2025-10-14T21:15:20.579Z",
+    "end": "2025-10-14T21:15:41.213Z",
+    "duration": 20634,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8c379fc0-c37d-4800-9099-4903a99fd452",
+      "uuid": "45a7af9a-0b5e-4ed7-9ba0-305a9d8ac55a",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/001.e2e-login-com-sucesso-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/001.e2e-login-com-sucesso-BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ac791933-732c-48a1-a7ab-8e1abde5548e",
+          "uuid": "d95a421d-2ef1-4c5b-9405-a65b42759b9c",
           "title": "Buonny Check E2E - Login - credenciais válidas",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Buonny Check E2E - Login BC sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais válidas Buonny Check E2E - Login BC sucesso",
               "timedOut": null,
-              "duration": 9894,
+              "duration": 10813,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(Cypress.env(\"user_passwordBC\"), {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.url({\n  timeout: 40000\n}).should(\"include\", \"https://tstbuonnycheck.buonny.com.br/#/dashboard\");",
               "err": {},
-              "uuid": "00a38db2-8bd8-4243-8f3d-c26a1bb6a83d",
-              "parentUUID": "ac791933-732c-48a1-a7ab-8e1abde5548e",
+              "uuid": "c45a6aec-6306-4c16-8ac2-1e60c9181bd9",
+              "parentUUID": "d95a421d-2ef1-4c5b-9405-a65b42759b9c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "00a38db2-8bd8-4243-8f3d-c26a1bb6a83d"
+            "c45a6aec-6306-4c16-8ac2-1e60c9181bd9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9894,
+          "duration": 10813,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

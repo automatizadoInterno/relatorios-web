@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-14T18:43:45.493Z",
-    "end": "2025-10-14T18:44:27.508Z",
-    "duration": 42015,
+    "start": "2025-10-14T21:04:04.684Z",
+    "end": "2025-10-14T21:04:43.220Z",
+    "duration": 38536,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "61daacac-f08b-4fc2-b9a3-55c3b2947d74",
+      "uuid": "f07ce59e-cf85-4ac5-af68-9f33c2642a18",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5f277a69-aa62-4449-ada9-4e9ce306a8ae",
+          "uuid": "d793f1c7-26dd-48b8-8d2b-bc4da377ba29",
           "title": "Portal Buonny E2E - Logout",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "logout, com sucesso",
               "fullTitle": "Portal Buonny E2E - Logout logout, com sucesso",
               "timedOut": null,
-              "duration": 38649,
+              "duration": 37849,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.logout();\ncy.url().should(\"include\", \"/\");",
               "err": {},
-              "uuid": "ebe79cc8-5843-49eb-af3b-9a38470476fa",
-              "parentUUID": "5f277a69-aa62-4449-ada9-4e9ce306a8ae",
+              "uuid": "1561286d-18d0-4e43-a633-1ea5b8e53f2e",
+              "parentUUID": "d793f1c7-26dd-48b8-8d2b-bc4da377ba29",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ebe79cc8-5843-49eb-af3b-9a38470476fa"
+            "1561286d-18d0-4e43-a633-1ea5b8e53f2e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 38649,
+          "duration": 37849,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
