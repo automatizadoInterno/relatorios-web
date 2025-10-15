@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T20:09:57.101Z",
-    "end": "2025-10-15T20:10:35.355Z",
-    "duration": 38254,
+    "start": "2025-10-15T21:02:07.245Z",
+    "end": "2025-10-15T21:02:46.630Z",
+    "duration": 39385,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2d12eb53-17d4-4843-9599-ad85f2bef68e",
+      "uuid": "2b4f8ecf-7695-4a46-b1fb-9cb630f43ba9",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8db4c1af-fa94-4964-8834-b8560a199737",
+          "uuid": "0bddfbd5-7aaf-41d4-9c10-f22ad7837b16",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Avançar sem preencher campos obrigatórios e validar erros",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios Avançar sem preencher campos obrigatórios e validar erros",
               "timedOut": null,
-              "duration": 37689,
+              "duration": 38733,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const codCliente = \"87906\";\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"Selecione uma Gerenciadora\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Transportador não selecionado\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o tipo do profissional\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o veículo\").and(\"be.visible\");\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"Selecione uma Gerenciadora\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");",
               "err": {},
-              "uuid": "889c2942-5334-49d8-9f55-21e18914147d",
-              "parentUUID": "8db4c1af-fa94-4964-8834-b8560a199737",
+              "uuid": "27e2ab92-6aa6-4430-8bf0-20b4d2930efc",
+              "parentUUID": "0bddfbd5-7aaf-41d4-9c10-f22ad7837b16",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "889c2942-5334-49d8-9f55-21e18914147d"
+            "27e2ab92-6aa6-4430-8bf0-20b4d2930efc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 37689,
+          "duration": 38733,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

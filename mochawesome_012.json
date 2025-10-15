@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T20:07:26.557Z",
-    "end": "2025-10-15T20:08:05.550Z",
-    "duration": 38993,
+    "start": "2025-10-15T20:59:40.361Z",
+    "end": "2025-10-15T21:00:21.721Z",
+    "duration": 41360,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9dffce74-5587-4766-bb9c-ee8d4f1d424a",
+      "uuid": "37aca940-7f8f-4421-b846-3b8f185a92ea",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/001.e2e-consulta-sucesso_BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/001.e2e-consulta-sucesso_BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "12083d59-62d5-479f-8bc2-a92f6946724f",
+          "uuid": "ec5c6d0c-2217-496c-931b-fe5cd6fdb36c",
           "title": "030 Buonny Check E2E - Consulta de profissional - Casos de sucesso",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Consultar status do profissional, com sucesso",
               "fullTitle": "030 Buonny Check E2E - Consulta de profissional - Casos de sucesso Consultar status do profissional, com sucesso",
               "timedOut": null,
-              "duration": 33660,
+              "duration": 33297,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/consulta-profissional\"] > .menu-label').should(\"be.visible\").click({\n  timeout: 30000\n});\ncy.get(\"#mat-select-0\").click();\ncy.get(\".mat-option\").contains(/BUONNY CHECK(?! ST)/).click();\ncy.get(\"form.ng-untouched > .d-flex > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"646.146.860-95\");\ncy.get(\".mat-form-field.ng-tns-c106-13 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"TST1A23\");\ncy.get(\".tipo-carga > .mat-form-field-wrapper > .mat-form-field-flex\").click();\ncy.get(\".mat-option\").contains(/AÇO/).click();\ncy.get(\".valor > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.contains(\"span.mat-option-text\", /De R\\$.*0,01.*100\\.000,00/).click();\ncy.get(\":nth-child(1) > .d-flex > .estado > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/SP/).click();\ncy.get(\":nth-child(6) > :nth-child(1) > .d-flex > .mat-form-field-type-mat-input > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"Adamantina\");\ncy.get(\":nth-child(2) > .d-flex > .estado > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/SP/).click();\ncy.get(\":nth-child(2) > .d-flex > .mat-form-field-type-mat-input > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"Adamantina\");\ncy.get(\".button-default > .mat-button-wrapper\").click();\ncy.get(\".mr-3 > :nth-child(1) > :nth-child(1) > .ml-2\", {\n  timeout: 30000\n}).invoke(\"text\").should(\"match\", /PERFIL ADEQUADO AO RISCO|PERFIL ADEQUADO AO RISCO POR PRAZO|PERFIL COM INSUFICIÊNCIA DE DADOS|PERFIL DIVERGENTE|PERFIL EXPIRADO|EM ANALISE/);",
               "err": {},
-              "uuid": "0ac8ed68-c5ba-49a8-ab56-bfa76ea38c97",
-              "parentUUID": "12083d59-62d5-479f-8bc2-a92f6946724f",
+              "uuid": "1c9603cb-9d33-4b29-8836-c2597daaacfc",
+              "parentUUID": "ec5c6d0c-2217-496c-931b-fe5cd6fdb36c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0ac8ed68-c5ba-49a8-ab56-bfa76ea38c97"
+            "1c9603cb-9d33-4b29-8836-c2597daaacfc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 33660,
+          "duration": 33297,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

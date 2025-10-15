@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T19:53:52.223Z",
-    "end": "2025-10-15T19:55:11.572Z",
-    "duration": 79349,
+    "start": "2025-10-15T20:46:37.691Z",
+    "end": "2025-10-15T20:47:56.615Z",
+    "duration": 78924,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d6f722c6-bc5b-4ee2-aaae-3283bebca7b1",
+      "uuid": "80a93920-9c6c-4554-a3e3-9f689581bbf8",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/001.e2e-cadastro-veiculo.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/001.e2e-cadastro-veiculo.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "72c5440a-4969-41c2-84eb-9f0797b22271",
+          "uuid": "c209aaf2-d099-4492-ab5b-d04ca4fb5b05",
           "title": "Portal Buonny - Cadastro de veículo",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Sucesso - preenche o formulário de veículo com dados válidos",
               "fullTitle": "Portal Buonny - Cadastro de veículo Sucesso - preenche o formulário de veículo com dados válidos",
               "timedOut": null,
-              "duration": 78877,
+              "duration": 78400,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\ncy.visit(\"/veiculos/localizar_veiculo/87906\");\ncy.get(\"#TVeicVeiculoVeicPlaca\").type(placa);\ncy.get(\".btn-success\").click();\ncy.url().should(\"include\", `/87906/${placa}`);\ncy.get(\"#TVeicVeiculoVeicTveiCodigo\").select(\"CAVALO\");\ncy.get(\"#TVeicVeiculoVeicTcarCodigo\").select(\"APENAS O CAVALO\");\ncy.get(\"#TMvecModeloVeiculoMvecMveiCodigo\").select(\"SCANIA\");\ncy.get(\"#TVeicVeiculoVeicMvecCodigo\").select(\"SCANIA\");\ncy.get(\"#TPaisPaisPaisCodigo\").select(\"BRASIL\");\ncy.get(\"#TEstaEstadoEstaCodigo\").select(\"SC\");\ncy.get(\"#TVeicVeiculoVeicCidaCodigoEmplacamento\").select(\"BLUMENAU\");\ncy.get(\"#VeiculoCorCodigo\").select(\"AZUL\");\ncy.get(\"#TVeicVeiculoVeicStatus\").select(\"ATIVO\");\ncy.get(\"#Tracker0TTecnTecnologiaTecnCodigo\").select(\"SASCAR\");\ncy.get(\"#Tracker0TVtecVersaoTecnologiaVtecCodigo\").select(\"SASCAR - NORMAL\");\n// Seleciona o dia 15, um ano no futuro\n(0, _gerarPlaca.selecionarDataAnoFuturo)(\"#TVeicVeiculoVeicDataVencLicenciamento\");\ncy.get(\"#TVeicVeiculoVeicAnoFabricacao\").type(\"2000\");\ncy.get(\"#TVeicVeiculoVeicAnoModelo\").type(\"2000\");\ncy.get(\"#TVeicVeiculoVeicChassi\").type(\"9BSRH4X2ZS3359107\");\ncy.get(\"#TVeicVeiculoVeicRenavam\").type(\"00641361785\");\ncy.get(\"#TVeicVeiculoVeicTelefone\").type(\"(11)9729-24482\");\ncy.get(\"#VeiculoMotorista\").type(\"43006151879\");\ncy.get(\"#Tracker0TTermTerminalTermNumeroTerminal\").type(placa);\ncy.get(\"#select2-TVeicVeiculoVeicVteiCodigo-container\").click();\ncy.contains(\".select2-results__option\", \"2 eixos (1 simples rodagem simples + 1 simples rodagem dupla- 6 pneus)\").click();\ncy.get(\"#TvcoCodigo1\").check({\n  force: true\n});\ncy.get(\"#TVeicVeiculoVeicTemCofre0\").check({\n  force: true\n});\ncy.get(\"#TVeicVeiculoProprietario1\").check({\n  force: true\n});\ncy.get(\"#submit_form\").click();\ncy.get(\".ui-dialog-buttonset > .btn-success\").click();\ncy.url().should(\"include\", \"/portal/Veiculos/adicionar_veiculo\");",
               "err": {},
-              "uuid": "3783313e-c14b-4512-a7de-b1292158d276",
-              "parentUUID": "72c5440a-4969-41c2-84eb-9f0797b22271",
+              "uuid": "7adc89ba-e0b1-4aad-8374-d3ee3efda432",
+              "parentUUID": "c209aaf2-d099-4492-ab5b-d04ca4fb5b05",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3783313e-c14b-4512-a7de-b1292158d276"
+            "7adc89ba-e0b1-4aad-8374-d3ee3efda432"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 78877,
+          "duration": 78400,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
