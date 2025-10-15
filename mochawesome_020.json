@@ -1,16 +1,16 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
+    "tests": 1,
     "passes": 0,
-    "pending": 1,
+    "pending": 0,
     "failures": 1,
-    "start": "2025-10-15T18:56:59.034Z",
-    "end": "2025-10-15T18:58:43.195Z",
-    "duration": 104161,
-    "testsRegistered": 2,
+    "start": "2025-10-15T20:19:19.712Z",
+    "end": "2025-10-15T20:21:01.133Z",
+    "duration": 101421,
+    "testsRegistered": 1,
     "passPercent": 0,
-    "pendingPercent": 50,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "5eb90b14-05da-4138-8ea1-ba8fa5870fbd",
+      "uuid": "5ce6e318-9fe7-494e-a32b-047a97437aa7",
       "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "1e9d1b7b-0e6d-477f-b650-eebb81d2a07c",
+          "uuid": "3f8bbc4d-ec65-44f4-a70a-1e5c4c4be002",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Alteração de Nota Fiscal e Produto na SM",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alteração de Nota Fiscal e Produto na SM",
               "timedOut": null,
-              "duration": 103779,
+              "duration": 100388,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -48,29 +48,11 @@
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-list-alt\", {\n    timeout: 20000\n  }).click();\n  cy.get('[id^=\"Itinerario\"][id$=\"DataPrevisaoDeChegada\"]').type(`${dataChegadaSm}`, {\n    force: true\n  });\n  cy.get(\"#Itinerario0HoraPrevisaoDeChegada\").clear({\n    force: true\n  }).type(horaSm);\n  cy.get(\"#Itinerario0DadosDaCargaCarga0Nf\").clear({\n    force: true\n  }).type(\"123\");\n  cy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\").select(\"CACAU\", {\n    force: true\n  });\n  cy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\").clear({\n    force: true\n  }).type(\"5267\");\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".alert.alert-success p\").should(\"have.text\", \"Os dados informados foram armazenados com sucesso!\");\n});",
               "err": {
                 "message": "AssertionError: Timed out retrying after 60000ms: Expected to find element: `.alert.alert-success p`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 60000ms: Expected to find element: `.alert.alert-success p`, but never found it.\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF, Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js:49:45)\n    at getRet (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:141671:19)",
+                "estack": "AssertionError: Timed out retrying after 60000ms: Expected to find element: `.alert.alert-success p`, but never found it.\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/001.e2e-alteracao-NF-Produtos-Itinerarios.cy.js:49:45)\n    at getRet (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:141671:19)",
                 "diff": null
               },
-              "uuid": "e139ef6a-e40f-4ddc-8771-1d55d48e228e",
-              "parentUUID": "1e9d1b7b-0e6d-477f-b650-eebb81d2a07c",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Alterar Itinerário, adicionar parada com sucesso",
-              "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alterar Itinerário, adicionar parada com sucesso",
-              "timedOut": null,
-              "duration": 0,
-              "state": "pending",
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": true,
-              "context": null,
-              "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-globe\", {\n    timeout: 20000\n  }).click();\n  cy.get(\"#Itinerario0RefeCodigoVisual-search\").click();\n  cy.get(\":nth-child(4) > input.btn\", {\n    timeout: 20000\n  }).click();\n  cy.get('[codigo=\"13577259\"] > :nth-child(1)', {\n    timeout: 20000\n  }).click();\n  cy.get(\".blockOverlay\", {\n    timeout: 20000\n  }).should(\"not.exist\");\n  cy.get(\"#Itinerario0DataPrevisaoDeChegada\").type(dataChegadaSm);\n  cy.get(\"#Itinerario0HoraPrevisaoDeChegada\").type(\"13:00\");\n  cy.get(\"#Itinerario0TipoParada\").select(\"12\");\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".alert\").contains(\"Os dados informados foram armazenados com sucesso!\", {\n    timeout: 60000\n  });\n});",
-              "err": {},
-              "uuid": "8ca9b1c7-3af7-4b03-b2da-4bec6340b8f2",
-              "parentUUID": "1e9d1b7b-0e6d-477f-b650-eebb81d2a07c",
+              "uuid": "bfede3d9-3d51-4cc4-bd7e-fca03e706486",
+              "parentUUID": "3f8bbc4d-ec65-44f4-a70a-1e5c4c4be002",
               "isHook": false,
               "skipped": false
             }
@@ -78,13 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e139ef6a-e40f-4ddc-8771-1d55d48e228e"
+            "bfede3d9-3d51-4cc4-bd7e-fca03e706486"
           ],
-          "pending": [
-            "8ca9b1c7-3af7-4b03-b2da-4bec6340b8f2"
-          ],
+          "pending": [],
           "skipped": [],
-          "duration": 103779,
+          "duration": 100388,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T18:28:29.890Z",
-    "end": "2025-10-15T18:28:57.159Z",
-    "duration": 27269,
+    "start": "2025-10-15T19:51:29.779Z",
+    "end": "2025-10-15T19:51:52.143Z",
+    "duration": 22364,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3d57cf8a-37e2-4f17-b8ae-172fd53ec143",
+      "uuid": "000eacb1-8785-4967-bbc9-407164424b62",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6b15b66a-9454-4eff-a13d-d005348aab33",
+          "uuid": "10137492-f3fa-4bb3-a3e7-b2c9b6954774",
           "title": "Portal Buonny E2E - Login com credenciais válidas",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login PB sucesso",
               "fullTitle": "Portal Buonny E2E - Login com credenciais válidas Login PB sucesso",
               "timedOut": null,
-              "duration": 26464,
+              "duration": 21865,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const user = Cypress.env(\"user_name\");\nconst password = Cypress.env(\"user_password\");\nconst options = {\n  cacheSession: false\n};\ncy.login(user, password, options);\ncy.url().should(\"include\", \"/Painel/modulo_admin\");",
               "err": {},
-              "uuid": "5b60f1c1-0569-407d-8823-f61d868e15f7",
-              "parentUUID": "6b15b66a-9454-4eff-a13d-d005348aab33",
+              "uuid": "346876da-9a34-4074-a95a-7b8ab98d94f0",
+              "parentUUID": "10137492-f3fa-4bb3-a3e7-b2c9b6954774",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5b60f1c1-0569-407d-8823-f61d868e15f7"
+            "346876da-9a34-4074-a95a-7b8ab98d94f0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26464,
+          "duration": 21865,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

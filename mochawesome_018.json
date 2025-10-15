@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T18:54:47.171Z",
-    "end": "2025-10-15T18:55:44.460Z",
-    "duration": 57289,
+    "start": "2025-10-15T20:17:09.809Z",
+    "end": "2025-10-15T20:18:10.234Z",
+    "duration": 60425,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "46c4afb5-b02d-4754-b442-0c0f692142af",
+      "uuid": "68712ccd-f67f-440f-a1f2-46c474f9a00d",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/001.e2e-alteracao-placa-motorista.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/001.e2e-alteracao-placa-motorista.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f597b293-3ba1-4002-b6c0-476046b7d2f8",
+          "uuid": "c151cd75-74e0-4712-9813-d94608ef8b95",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Alterar a Placa e Motorista da SM com sucesso!",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista Alterar a Placa e Motorista da SM com sucesso!",
               "timedOut": null,
-              "duration": 56967,
+              "duration": 60180,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\":nth-child(3) > .btn\").click();\n  cy.get(\"#Recebsm0Placa\").then(campoPlaca => {\n    const valorAtual = campoPlaca.val();\n    if (valorAtual === \"HCJ6C26\") {\n      cy.get(\"#Recebsm0Placa\").clear().type(\"ARM9515\");\n      cy.get(\":nth-child(3) > .row-fluid\").click();\n    } else if (valorAtual === \"ARM9515\") {\n      cy.get(\"#Recebsm0Placa\").clear().type(\"HCJ6C26\");\n      cy.get(\":nth-child(3) > .row-fluid\").click();\n    } else {\n      throw new Error(`Valor inesperado no campo placa: \"${valorAtual}\"`);\n    }\n  });\n  cy.get(\"#TPfisPessoaFisicaPfisCpf\").then(campoCPF => {\n    const valorAtual = campoCPF.val();\n    if (valorAtual === \"04488742530\") {\n      cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"01180160169\");\n      cy.get(\":nth-child(5) > .row-fluid\").click();\n    } else if (valorAtual === \"01180160169\") {\n      cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"04488742530\");\n      cy.get(\":nth-child(5) > .row-fluid\").click();\n    } else {\n      throw new Error(`Valor inesperado no campo CPF: \"${valorAtual}\"`);\n    }\n  });\n  cy.wait(5000);\n  cy.get(\"input.btn\").click();\n  cy.get(\".alert\").should(\"contain\", \"Alteração realizada com sucesso\", {\n    timeout: 60000\n  });\n});",
               "err": {},
-              "uuid": "18336f9b-c377-4614-b1f9-c741236d5a2b",
-              "parentUUID": "f597b293-3ba1-4002-b6c0-476046b7d2f8",
+              "uuid": "2c0f500b-afae-42f8-9cd9-30b821dd2b9b",
+              "parentUUID": "c151cd75-74e0-4712-9813-d94608ef8b95",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "18336f9b-c377-4614-b1f9-c741236d5a2b"
+            "2c0f500b-afae-42f8-9cd9-30b821dd2b9b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 56967,
+          "duration": 60180,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
