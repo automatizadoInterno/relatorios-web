@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 1,
     "failures": -1,
-    "start": "2025-10-15T15:35:05.872Z",
-    "end": "2025-10-15T15:35:23.318Z",
-    "duration": 17446,
+    "start": "2025-10-15T18:30:35.850Z",
+    "end": "2025-10-15T18:30:53.691Z",
+    "duration": 17841,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 33.33333333333333,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e87c0895-d541-4528-9da6-e453bda4dd6f",
+      "uuid": "39f414fb-f800-476b-882f-c0c8964cf63d",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "88fef3e8-e9eb-406e-b055-ecbadacf7559",
+          "uuid": "c3b4b263-f9e8-40c5-9520-c554ae81c4ca",
           "title": "Portal Buonny E2E - Campo Esqueci Minha Senha",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "acessar, esqueci minha senha",
               "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha acessar, esqueci minha senha",
               "timedOut": null,
-              "duration": 10082,
+              "duration": 10823,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\".esqueci-senha\").click();\ncy.url().should(\"include\", \"/usuarios/esqueci_minha_senha\");\ncy.get(\"h1\").should(\"contain.text\", \"Esqueceu sua senha?\");",
               "err": {},
-              "uuid": "2db757bb-0e7c-4515-806f-7d25ac453d69",
-              "parentUUID": "88fef3e8-e9eb-406e-b055-ecbadacf7559",
+              "uuid": "86354769-277b-4565-8541-2904b6032d3f",
+              "parentUUID": "c3b4b263-f9e8-40c5-9520-c554ae81c4ca",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get(\".esqueci-senha\").click();\ncy.get(\"#UsuarioApelido\").type(Cypress.env(\"user_name\"), {\n  log: false\n});\ncy.get(\".submit-button\").click();\ncy.url().should(\"include\", \"/usuarios/informar_token\");\ncy.get(\".middle-box\").should(\"be.visible\");\ncy.get(\"h1\").should(\"contain.text\", \"Verificação de dispositivo\");\ncy.get(\"#email\").should(\"contain.text\", \"se*****il@buonny.com.br\");",
               "err": {},
-              "uuid": "dc4c2fdb-8d5e-4167-aaa1-39ab5571de5c",
-              "parentUUID": "88fef3e8-e9eb-406e-b055-ecbadacf7559",
+              "uuid": "0f219c8d-5ec9-494a-bd43-90e4086e8ae3",
+              "parentUUID": "c3b4b263-f9e8-40c5-9520-c554ae81c4ca",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "recuperar senha, usuario inexistente",
               "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha recuperar senha, usuario inexistente",
               "timedOut": null,
-              "duration": 6640,
+              "duration": 6494,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -83,23 +83,23 @@
               "context": null,
               "code": "cy.visit(\"/usuarios/esqueci_minha_senha\");\ncy.get(\"#UsuarioApelido\").type(\"admin123\", {\n  log: false\n});\ncy.get(\".submit-button\").click();\ncy.get(\".help-block.error-message\").should(\"be.visible\").should(\"contain.text\", \"Usuário não encontrado\");",
               "err": {},
-              "uuid": "d6b881b0-bc0b-49ee-b528-93417790de70",
-              "parentUUID": "88fef3e8-e9eb-406e-b055-ecbadacf7559",
+              "uuid": "e7f98054-1be2-4f54-99fa-d799564ba418",
+              "parentUUID": "c3b4b263-f9e8-40c5-9520-c554ae81c4ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2db757bb-0e7c-4515-806f-7d25ac453d69",
-            "d6b881b0-bc0b-49ee-b528-93417790de70"
+            "86354769-277b-4565-8541-2904b6032d3f",
+            "e7f98054-1be2-4f54-99fa-d799564ba418"
           ],
           "failures": [],
           "pending": [
-            "dc4c2fdb-8d5e-4167-aaa1-39ab5571de5c"
+            "0f219c8d-5ec9-494a-bd43-90e4086e8ae3"
           ],
           "skipped": [],
-          "duration": 16722,
+          "duration": 17317,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
