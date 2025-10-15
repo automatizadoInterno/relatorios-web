@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T14:44:05.181Z",
-    "end": "2025-10-15T14:44:32.929Z",
-    "duration": 27748,
+    "start": "2025-10-15T15:34:30.486Z",
+    "end": "2025-10-15T15:34:57.965Z",
+    "duration": 27479,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "71ded7b3-ef55-4a2e-b608-fc7fd04d78bd",
+      "uuid": "ef2c6d69-3ee7-4c10-8ad5-892b89b9731d",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/003.e2e-login-erros-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/003.e2e-login-erros-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "501d32bb-79f4-48a1-864b-5882ca6c92ba",
+          "uuid": "c82ba03d-6b32-45ff-87ec-a80293b46b5e",
           "title": "Portal Buonny E2E - Login erros",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "login, inválido",
               "fullTitle": "Portal Buonny E2E - Login erros login, inválido",
               "timedOut": null,
-              "duration": 17488,
+              "duration": 16852,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#usuario\").type(Cypress.env(\"user_name\"), {\n  log: false\n});\ncy.get(\"#senha\").type(\"admin123\"), {\n  log: false\n};\ncy.get(\".entrar\").click();\ncy.get(\".alert > p\").should(\"be.visible\").and(\"contain.text\", \"Usuário e/ou senha inválidos.\");",
               "err": {},
-              "uuid": "5430d107-558f-41e8-b365-847ee6c86069",
-              "parentUUID": "501d32bb-79f4-48a1-864b-5882ca6c92ba",
+              "uuid": "d78663ca-ba45-4b26-a012-00857a9b3039",
+              "parentUUID": "c82ba03d-6b32-45ff-87ec-a80293b46b5e",
               "isHook": false,
               "skipped": false
             },
@@ -56,30 +56,30 @@
               "title": "login, captcha inválido",
               "fullTitle": "Portal Buonny E2E - Login erros login, captcha inválido",
               "timedOut": null,
-              "duration": 9894,
+              "duration": 10462,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(\"#usuario\").type(\"admin\", {\n  log: false\n});\ncy.get(\"#senha\").type(\"admin123\", {\n  log: false\n});\ncy.get(\".entrar\").click();\ncy.get(\".alert > p\").should(\"be.visible\").and(\"contain.text\", \"Captcha inválido. Por favor, tente novamente.\");",
               "err": {},
-              "uuid": "896c3ec7-3fd4-4a2f-9194-3c1939c82c19",
-              "parentUUID": "501d32bb-79f4-48a1-864b-5882ca6c92ba",
+              "uuid": "bea9c639-410a-4c9c-a5d1-937cd3e03e4e",
+              "parentUUID": "c82ba03d-6b32-45ff-87ec-a80293b46b5e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5430d107-558f-41e8-b365-847ee6c86069",
-            "896c3ec7-3fd4-4a2f-9194-3c1939c82c19"
+            "d78663ca-ba45-4b26-a012-00857a9b3039",
+            "bea9c639-410a-4c9c-a5d1-937cd3e03e4e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 27382,
+          "duration": 27314,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
