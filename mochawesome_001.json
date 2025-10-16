@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-15T20:44:44.129Z",
-    "end": "2025-10-15T20:45:21.140Z",
-    "duration": 37011,
+    "start": "2025-10-16T18:40:48.665Z",
+    "end": "2025-10-16T18:41:26.303Z",
+    "duration": 37638,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bd0f55c0-2eb6-4e68-b109-852d81854960",
+      "uuid": "6c92861d-46c4-4f6a-8ad9-80a7f649de43",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f4cb786-a51a-4c9a-b94e-2e52035a1931",
+          "uuid": "ad98c4af-c171-4d6a-ae17-18acacef94b6",
           "title": "Portal Buonny E2E - Logout",
           "fullFile": "",
           "file": "",
@@ -47,15 +47,15 @@
               "context": null,
               "code": "cy.logout();\ncy.url().should(\"include\", \"/\");",
               "err": {},
-              "uuid": "ada2d06c-0522-4603-8558-e1ad67cf9c29",
-              "parentUUID": "9f4cb786-a51a-4c9a-b94e-2e52035a1931",
+              "uuid": "97a1a4d8-7f65-4ac5-ad3c-7b6de3294ce4",
+              "parentUUID": "ad98c4af-c171-4d6a-ae17-18acacef94b6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ada2d06c-0522-4603-8558-e1ad67cf9c29"
+            "97a1a4d8-7f65-4ac5-ad3c-7b6de3294ce4"
           ],
           "failures": [],
           "pending": [],
