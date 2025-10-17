@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-17T12:56:51.523Z",
-    "end": "2025-10-17T12:57:13.213Z",
-    "duration": 21690,
+    "start": "2025-10-17T13:53:36.476Z",
+    "end": "2025-10-17T13:53:56.799Z",
+    "duration": 20323,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5dac5b76-86c2-4daf-9863-4d15a89ae1e7",
+      "uuid": "ab697615-3d91-48b0-8cf4-7fc9538487ed",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/003.e2e-esqueci-minha-senha-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/003.e2e-esqueci-minha-senha-BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ce720853-fd2a-4d09-a9aa-50c3b3924df8",
+          "uuid": "74cd288f-4db3-4280-b4eb-0076ff0db22a",
           "title": "Buonny Check E2E - Login - Redirecionamento para a recuperação de senha",
           "fullFile": "",
           "file": "",
@@ -47,15 +47,15 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get('a[target=\"_blank\"]').invoke(\"removeAttr\", \"target\");\ncy.get(\"#mat-hint-0 > a\").click({\n  force: true\n});\ncy.origin(\"https://tstportal.buonny.com.br\", () => {\n  cy.url().should(\"include\", \"https://tstportal.buonny.com.br/portal/usuarios/esqueci_minha_senha\");\n});",
               "err": {},
-              "uuid": "aef8b1c3-6591-4fad-bc0b-826011cd2339",
-              "parentUUID": "ce720853-fd2a-4d09-a9aa-50c3b3924df8",
+              "uuid": "7275397b-985e-4527-b289-3c493e70105f",
+              "parentUUID": "74cd288f-4db3-4280-b4eb-0076ff0db22a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "aef8b1c3-6591-4fad-bc0b-826011cd2339"
+            "7275397b-985e-4527-b289-3c493e70105f"
           ],
           "failures": [],
           "pending": [],
