@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-16T20:29:24.194Z",
-    "end": "2025-10-16T20:30:47.222Z",
-    "duration": 83028,
+    "start": "2025-10-17T12:32:56.584Z",
+    "end": "2025-10-17T12:34:20.412Z",
+    "duration": 83828,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "daa8bfa2-8a27-4db1-bc49-487e4467b7a6",
+      "uuid": "ea731956-13f5-4e70-b495-63c72f38f373",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a6a5371d-12a4-4b96-a109-66fd55966213",
+          "uuid": "71af4795-a42f-40e9-a883-d07c46c4eac0",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Avançar,preenchendo todos campos obrigatórios",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso Avançar,preenchendo todos campos obrigatórios",
               "timedOut": null,
-              "duration": 82840,
+              "duration": 83494,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const entradas = {\n  codCliente: \"87906\",\n  transportador: \"BUONNY PROJETOS E SERVICOS\",\n  cpfMotorista: \"64614686095\",\n  cpfAjudante: \"075.421.058-84\",\n  placaTeste: \"TST1A23\"\n};\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(entradas.codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TViagViagem2CodigoTransportador\", {\n  timeout: 10000\n}).select(entradas.transportador);\ncy.get(\"#TMotoMotorista2MotoCpf\").type(entradas.cpfMotorista);\ncy.get(\"#TMotoMotorista2Tipo\").select(\"CARRETEIRO\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#TMotoMotorista2MotoCpfAjudante\").type(entradas.cpfAjudante);\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TVeicVeiculo20VeicPlaca\").type(entradas.placaTeste);\ncy.wait(5000);\ncy.get(\"#consulta-incluir\").click();\ncy.url().should(\"include\", \"/SolicitacoesMonitoramento2/incluir/N/N/\");",
               "err": {},
-              "uuid": "78b87e40-61c3-452a-9682-a8be14941799",
-              "parentUUID": "a6a5371d-12a4-4b96-a109-66fd55966213",
+              "uuid": "53f45c84-2236-412e-ade5-9e72bcfbcf2c",
+              "parentUUID": "71af4795-a42f-40e9-a883-d07c46c4eac0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "78b87e40-61c3-452a-9682-a8be14941799"
+            "53f45c84-2236-412e-ade5-9e72bcfbcf2c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 82840,
+          "duration": 83494,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
