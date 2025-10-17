@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-17T18:36:24.280Z",
-    "end": "2025-10-17T18:36:50.917Z",
-    "duration": 26637,
+    "start": "2025-10-17T19:25:46.610Z",
+    "end": "2025-10-17T19:26:13.610Z",
+    "duration": 27000,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c4eea8c6-5133-4708-b39c-7345a45d6504",
+      "uuid": "11a3b124-db5c-4d73-a5ac-460a8f7ac501",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f5152af1-9d56-45fd-a6f1-afb7bd9de076",
+          "uuid": "87e63c56-f945-4a01-8a2b-e0248bf2ff10",
           "title": "Buonny Check E2E - Login - credenciais inválidas'",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais inválidas' sucesso",
               "timedOut": null,
-              "duration": 11625,
+              "duration": 16373,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(`123`, {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.get(\".mat-error\", {\n  timeout: 20000\n}).should(\"have.text\", \"Usuário ou senha incorretos.\").should(\"be.visible\");",
               "err": {},
-              "uuid": "19433af0-ec33-459d-8925-9f2dda9923eb",
-              "parentUUID": "f5152af1-9d56-45fd-a6f1-afb7bd9de076",
+              "uuid": "25d2049d-fef4-4311-8d18-31fb4e704e9b",
+              "parentUUID": "87e63c56-f945-4a01-8a2b-e0248bf2ff10",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "19433af0-ec33-459d-8925-9f2dda9923eb"
+            "25d2049d-fef4-4311-8d18-31fb4e704e9b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11625,
+          "duration": 16373,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
