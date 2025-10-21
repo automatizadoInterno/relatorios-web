@@ -1,82 +1,24 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 2,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "testsRegistered": 2,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-10-21T12:12:54.685Z",
-    "end": "2025-10-21T12:19:15.782Z",
-    "duration": 381097
+    "start": "2025-10-21T12:59:59.046Z",
+    "end": "2025-10-21T13:02:46.295Z",
+    "duration": 167249
   },
   "results": [
     {
-      "uuid": "04055efa-b21b-4009-9eb1-9bcad2982d13",
-      "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/001.e2e-cadastro-veiculo.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/001.e2e-cadastro-veiculo.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ddb8f0fa-b4e1-4915-a508-ed99d3f932e9",
-          "title": "Portal Buonny - Cadastro de veículo",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Sucesso - preenche o formulário de veículo com dados válidos",
-              "fullTitle": "Portal Buonny - Cadastro de veículo Sucesso - preenche o formulário de veículo com dados válidos",
-              "timedOut": null,
-              "duration": 132419,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\ncy.visit(\"/veiculos/localizar_veiculo/87906\");\ncy.get(\"#TVeicVeiculoVeicPlaca\").type(placa);\ncy.get(\".btn-success\").click();\ncy.url().should(\"include\", `/87906/${placa}`);\ncy.get(\"#TVeicVeiculoVeicTveiCodigo\").select(\"CAVALO\");\ncy.get(\"#TVeicVeiculoVeicTcarCodigo\").select(\"APENAS O CAVALO\");\ncy.get(\"#TMvecModeloVeiculoMvecMveiCodigo\").select(\"SCANIA\");\ncy.get(\"#TVeicVeiculoVeicMvecCodigo\").select(\"SCANIA\");\ncy.get(\"#TPaisPaisPaisCodigo\").select(\"BRASIL\");\ncy.get(\"#TEstaEstadoEstaCodigo\").select(\"SC\");\ncy.get(\"#TVeicVeiculoVeicCidaCodigoEmplacamento\").select(\"BLUMENAU\");\ncy.get(\"#VeiculoCorCodigo\").select(\"AZUL\");\ncy.get(\"#TVeicVeiculoVeicStatus\").select(\"ATIVO\");\ncy.get(\"#Tracker0TTecnTecnologiaTecnCodigo\").select(\"SASCAR\");\ncy.get(\"#Tracker0TVtecVersaoTecnologiaVtecCodigo\").select(\"SASCAR - NORMAL\");\n// Seleciona o dia 15, um ano no futuro\n(0, _gerarPlaca.selecionarDataAnoFuturo)(\"#TVeicVeiculoVeicDataVencLicenciamento\");\ncy.get(\"#TVeicVeiculoVeicAnoFabricacao\").type(\"2000\");\ncy.get(\"#TVeicVeiculoVeicAnoModelo\").type(\"2000\");\ncy.get(\"#TVeicVeiculoVeicChassi\").type(\"9BSRH4X2ZS3359107\");\ncy.get(\"#TVeicVeiculoVeicRenavam\").type(\"00641361785\");\ncy.get(\"#TVeicVeiculoVeicTelefone\").type(\"(11)9729-24482\");\ncy.get(\"#VeiculoMotorista\").type(\"43006151879\");\ncy.get(\"#Tracker0TTermTerminalTermNumeroTerminal\").type(placa);\ncy.get(\"#select2-TVeicVeiculoVeicVteiCodigo-container\").click();\ncy.contains(\".select2-results__option\", \"2 eixos (1 simples rodagem simples + 1 simples rodagem dupla- 6 pneus)\").click();\ncy.get(\"#TvcoCodigo1\").check({\n  force: true\n});\ncy.get(\"#TVeicVeiculoVeicTemCofre0\").check({\n  force: true\n});\ncy.get(\"#TVeicVeiculoProprietario1\").check({\n  force: true\n});\ncy.get(\"#submit_form\").click();\ncy.get(\".ui-dialog-buttonset > .btn-success\").click();\ncy.url().should(\"include\", \"/portal/Veiculos/adicionar_veiculo\");",
-              "err": {},
-              "uuid": "c0af98a1-4e79-4fd4-8455-c225adc40581",
-              "parentUUID": "ddb8f0fa-b4e1-4915-a508-ed99d3f932e9",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "c0af98a1-4e79-4fd4-8455-c225adc40581"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 132419,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "5180a839-3bc5-4e0e-8650-110e6a819f9f",
+      "uuid": "c64b7bd3-c425-4667-92fc-25f4d0bce621",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/002.e2e-cadastro-veiculo-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/004 - E2E Cadastro de Veículos/002.e2e-cadastro-veiculo-erros.cy.js",
@@ -85,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9c4e0e3f-3e55-4cfc-a89e-5325cfc799e9",
+          "uuid": "a08b561d-e575-47c3-89ff-5d8650fe1c8c",
           "title": "Cadastro de veículos - validações obrigatórias",
           "fullFile": "",
           "file": "",
@@ -96,7 +38,7 @@
               "title": "Valida todos os campos obrigatórios",
               "fullTitle": "Cadastro de veículos - validações obrigatórias Valida todos os campos obrigatórios",
               "timedOut": null,
-              "duration": 156442,
+              "duration": 166463,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +47,20 @@
               "context": null,
               "code": "const placa = (0, _gerarPlaca.gerarPlaca)();\ncy.login();\ncy.visit(\"/veiculos/localizar_veiculo/87906\");\ncy.get(\"#TVeicVeiculoVeicPlaca\").type(placa);\ncy.get(\".btn-success\").click();\ncy.url().should(\"include\", `/87906/${placa}`);\nconst preencherFormularioCompleto = () => {\n  cy.get(\"#TVeicVeiculoVeicTveiCodigo\").select(\"CAVALO\");\n  cy.get(\"#TVeicVeiculoVeicTcarCodigo\").select(\"APENAS O CAVALO\");\n  cy.get(\"#TMvecModeloVeiculoMvecMveiCodigo\").select(\"SCANIA\");\n  cy.get(\"#TVeicVeiculoVeicMvecCodigo\").select(\"SCANIA\");\n  cy.get(\"#TPaisPaisPaisCodigo\").select(\"BRASIL\");\n  cy.get(\"#TEstaEstadoEstaCodigo\").select(\"SC\");\n  cy.get(\"#TVeicVeiculoVeicCidaCodigoEmplacamento\").select(\"BLUMENAU\");\n  cy.get(\"#VeiculoCorCodigo\").select(\"AZUL\");\n  cy.get(\"#TVeicVeiculoVeicStatus\").select(\"ATIVO\");\n  cy.get(\"#Tracker0TTecnTecnologiaTecnCodigo\").select(\"SASCAR\");\n  cy.get(\"#TVeicVeiculoVeicDataVencLicenciamento\").clear().type(\"17/10/2030\");\n  cy.get(\"#Tracker0TVtecVersaoTecnologiaVtecCodigo\").select(\"SASCAR - NORMAL\");\n  cy.get(\"#TVeicVeiculoVeicTelefone\").type(\"(11)9729-24482\");\n  cy.get(\"#VeiculoMotorista\").type(\"43006151879\");\n  cy.get(\"#Tracker0TTermTerminalTermNumeroTerminal\").type(placa);\n  cy.get(\"#select2-TVeicVeiculoVeicVteiCodigo-container\").click();\n  cy.contains(\".select2-results__option\", \"2 eixos (1 simples rodagem simples + 1 simples rodagem dupla- 6 pneus)\", {\n    timeout: 10000\n  }).click();\n  cy.get(\"#TvcoCodigo1\").check({\n    force: true\n  });\n  cy.get(\"#TVeicVeiculoVeicTemCofre0\").check({\n    force: true\n  });\n  cy.get(\"#TVeicVeiculoProprietario1\").check({\n    force: true\n  });\n};\npreencherFormularioCompleto();\nconst submeterEValidarErro = (seletorErro, textoEsperado) => {\n  cy.get(\"#submit_form\").click();\n  cy.get(\".ui-dialog-buttonset > .btn-success\").click();\n  cy.get(seletorErro).should(\"be.visible\").and(\"contain.text\", textoEsperado);\n};\n// Campos obrigatórios principais (unificados)\nconst camposUnificados = [{\n  campo: \"#TVeicVeiculoVeicAnoFabricacao\",\n  valor: \"2000\"\n}, {\n  campo: \"#TVeicVeiculoVeicAnoModelo\",\n  valor: \"2000\"\n}, {\n  campo: \"#TVeicVeiculoVeicChassi\",\n  valor: \"9BSRH4X2ZS3359107\"\n}, {\n  campo: \"#TVeicVeiculoVeicRenavam\",\n  valor: \"00641361785\"\n}];\ncamposUnificados.forEach(({\n  campo\n}) => cy.get(campo).clear());\n// 🔹 Substituição aqui — seletor mais confiável\ncy.get(\"#submit_form\").click();\ncy.get(\".ui-dialog-buttonset > .btn-success\").click();\ncy.contains(\"Ano de fabricação inválido. Ano de modelo inválido. Informe o chassi. Informe o renavam\", {\n  timeout: 10000\n}).should(\"be.visible\");\ncamposUnificados.forEach(({\n  campo,\n  valor\n}) => cy.get(campo).type(valor));\n// Campos isolados\nconst camposIsolados = [{\n  campo: \"#TVeicVeiculoVeicTveiCodigo\",\n  seletorErro: \".alert.alert-danger\",\n  mensagem: \"Informe o tipo\",\n  tipo: \"select\",\n  valorOriginal: \"CAVALO\"\n}, {\n  campo: \"#select2-TVeicVeiculoVeicVteiCodigo-container\",\n  seletorErro: \"#erro_eixo\",\n  mensagem: \"Informe o tipo de eixo\",\n  tipo: \"tipoEixo\",\n  valorOriginal: \"2 eixos (1 simples rodagem simples + 1 simples rodagem dupla- 6 pneus)\"\n}, {\n  campo: \"#TVeicVeiculoVeicCidaCodigoEmplacamento\",\n  seletorErro: \".alert.alert-danger\",\n  mensagem: \"Informe a cidade de emplacamento\",\n  tipo: \"select\",\n  valorOriginal: \"BLUMENAU\"\n}, {\n  campo: \"#Tracker0TVtecVersaoTecnologiaVtecCodigo\",\n  seletorErro: \".alert.alert-danger\",\n  mensagem: \"Versão da Tecnologia deve ser informado\",\n  tipo: \"select\",\n  valorOriginal: \"SASCAR - NORMAL\"\n}, {\n  campo: \"#TVeicVeiculoVeicDataVencLicenciamento\",\n  seletorErro: \".alert.alert-danger\",\n  mensagem: \"Vencimento do licenciamento inválido ou vencido\",\n  tipo: \"input\",\n  valorOriginal: \"17/10/2030\"\n}];\ncamposIsolados.forEach(({\n  campo,\n  seletorErro,\n  mensagem,\n  tipo,\n  valorOriginal\n}) => {\n  if (tipo === \"tipoEixo\") {\n    submeterEValidarErro(seletorErro, mensagem);\n    // Preenche novamente o eixo para os próximos testes\n    cy.get(campo).click();\n    cy.contains(\".select2-results__option\", valorOriginal, {\n      timeout: 10000\n    }).click();\n    return;\n  }\n  if (tipo === \"select2\") {\n    cy.get(\"select[name='data[TVeicVeiculo][veic_vtei_codigo]']\").select(\"\");\n  } else if (tipo === \"select\") {\n    cy.get(campo).select(\"\");\n  } else {\n    cy.get(campo).clear();\n  }\n  submeterEValidarErro(seletorErro, mensagem);\n  if (tipo === \"select2\") {\n    cy.get(campo).click();\n    cy.contains(\".select2-results__option\", valorOriginal, {\n      timeout: 10000\n    }).click();\n  } else if (tipo === \"select\") {\n    cy.get(campo).select(valorOriginal);\n  } else if (tipo === \"input\") {\n    cy.get(campo).type(valorOriginal);\n  }\n});",
               "err": {},
-              "uuid": "0dafac09-b65b-4e59-bb92-a18a38fb1995",
-              "parentUUID": "9c4e0e3f-3e55-4cfc-a89e-5325cfc799e9",
+              "uuid": "a4f06ebd-697a-41c0-85a3-bca0001d6ed8",
+              "parentUUID": "a08b561d-e575-47c3-89ff-5d8650fe1c8c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0dafac09-b65b-4e59-bb92-a18a38fb1995"
+            "a4f06ebd-697a-41c0-85a3-bca0001d6ed8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 156442,
+          "duration": 166463,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -153,7 +95,7 @@
     "marge": {
       "options": {
         "reportDir": "cypress/results",
-        "overwrite": false,
+        "overwrite": true,
         "html": true,
         "json": true
       },
