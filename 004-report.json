@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-21T14:29:31.444Z",
+    "end": "2025-10-21T14:29:53.913Z",
+    "duration": 22469,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40443505-9ec1-49b9-9e79-332b6fafe2ae",
+      "title": "",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - Portal 1/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - Portal 1/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "314147e4-49b6-478f-8ce6-14a233809212",
+          "title": "Portal Buonny E2E - Campo Esqueci Minha Senha",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "acessar, esqueci minha senha",
+              "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha acessar, esqueci minha senha",
+              "timedOut": null,
+              "duration": 11531,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".esqueci-senha\").click();\ncy.url().should(\"include\", \"/usuarios/esqueci_minha_senha\");\ncy.get(\"h1\").should(\"contain.text\", \"Esqueceu sua senha?\");",
+              "err": {},
+              "uuid": "25b38573-2abb-4047-8df6-7c4b03e94e3e",
+              "parentUUID": "314147e4-49b6-478f-8ce6-14a233809212",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "recuperar senha, usuario inexistente",
+              "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha recuperar senha, usuario inexistente",
+              "timedOut": null,
+              "duration": 10125,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/usuarios/esqueci_minha_senha\");\ncy.get(\"#UsuarioApelido\").type(\"admin123\", {\n  log: false\n});\ncy.get(\".submit-button\").click();\ncy.get(\".help-block.error-message\").should(\"be.visible\").should(\"contain.text\", \"Usuário não encontrado\");",
+              "err": {},
+              "uuid": "78424d61-7608-450c-937c-6643308d4c04",
+              "parentUUID": "314147e4-49b6-478f-8ce6-14a233809212",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25b38573-2abb-4047-8df6-7c4b03e94e3e",
+            "78424d61-7608-450c-937c-6643308d4c04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21656,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "[name]-report"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

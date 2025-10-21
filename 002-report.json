@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-21T13:52:06.048Z",
-    "end": "2025-10-21T13:52:53.106Z",
-    "duration": 47058,
+    "start": "2025-10-21T14:27:54.598Z",
+    "end": "2025-10-21T14:28:44.845Z",
+    "duration": 50247,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ec2796ad-d08c-47f9-a313-be379ebe8eda",
+      "uuid": "ed6a9842-7709-41bf-8200-808611fcc37a",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b06c6e1f-bb21-4217-8dd6-6b4a4bd06c7f",
+          "uuid": "84ebd473-8280-48c4-9810-76720168e4c9",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Avançar sem preencher campos obrigatórios e validar erros",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios Avançar sem preencher campos obrigatórios e validar erros",
               "timedOut": null,
-              "duration": 46688,
+              "duration": 48449,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const codCliente = \"87906\";\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"Selecione uma Gerenciadora\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Transportador não selecionado\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o tipo do profissional\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o veículo\").and(\"be.visible\");\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"Selecione uma Gerenciadora\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");",
               "err": {},
-              "uuid": "a3902fea-1168-4c34-be93-76ee264dd525",
-              "parentUUID": "b06c6e1f-bb21-4217-8dd6-6b4a4bd06c7f",
+              "uuid": "180f1bd2-fc00-4336-a9bb-cc4be42347a5",
+              "parentUUID": "84ebd473-8280-48c4-9810-76720168e4c9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a3902fea-1168-4c34-be93-76ee264dd525"
+            "180f1bd2-fc00-4336-a9bb-cc4be42347a5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 46688,
+          "duration": 48449,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -83,7 +83,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "mochawesome",
+        "reportFilename": "[name]-report",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -95,9 +95,10 @@
     "marge": {
       "options": {
         "reportDir": "cypress/results",
-        "overwrite": true,
+        "overwrite": false,
         "html": true,
-        "json": true
+        "json": true,
+        "reportFilename": "[name]-report"
       },
       "version": "6.3.0"
     }
