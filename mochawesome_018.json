@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-21T14:29:48.440Z",
-    "end": "2025-10-21T14:30:08.407Z",
-    "duration": 19967,
+    "start": "2025-10-21T16:16:01.650Z",
+    "end": "2025-10-21T16:16:14.608Z",
+    "duration": 12958,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "286c489c-2ab0-4106-acf2-99df09762bc2",
+      "uuid": "7ff88234-ba08-4442-9bdd-740533ae837f",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "df58182b-7d05-4054-8d9b-550a0c68e884",
+          "uuid": "46b4f3fc-f74a-44d2-9a23-9dacb5820c70",
           "title": "Buonny Check E2E - Login - credenciais inválidas'",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais inválidas' sucesso",
               "timedOut": null,
-              "duration": 9663,
+              "duration": 4894,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(`123`, {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.get(\".mat-error\", {\n  timeout: 20000\n}).should(\"have.text\", \"Usuário ou senha incorretos.\").should(\"be.visible\");",
               "err": {},
-              "uuid": "07695db7-624b-4b37-833f-4b733644e18c",
-              "parentUUID": "df58182b-7d05-4054-8d9b-550a0c68e884",
+              "uuid": "223f93e7-b48b-4881-a03f-978faf1772e2",
+              "parentUUID": "46b4f3fc-f74a-44d2-9a23-9dacb5820c70",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "07695db7-624b-4b37-833f-4b733644e18c"
+            "223f93e7-b48b-4881-a03f-978faf1772e2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9663,
+          "duration": 4894,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -83,7 +83,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "[name]-report",
+        "reportFilename": "mochawesome",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -97,8 +97,7 @@
         "reportDir": "cypress/results",
         "overwrite": false,
         "html": true,
-        "json": true,
-        "reportFilename": "[name]-report"
+        "json": true
       },
       "version": "6.3.0"
     }

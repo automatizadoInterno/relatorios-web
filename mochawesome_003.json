@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-21T14:29:31.444Z",
-    "end": "2025-10-21T14:29:53.913Z",
-    "duration": 22469,
+    "start": "2025-10-21T15:51:15.961Z",
+    "end": "2025-10-21T15:51:31.444Z",
+    "duration": 15483,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "40443505-9ec1-49b9-9e79-332b6fafe2ae",
+      "uuid": "8c85c3cb-6578-491d-afc4-83733a1f8ae2",
       "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - Portal 1/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - Portal 1/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/004.e2e-esqueci-minha-senha-PB.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "314147e4-49b6-478f-8ce6-14a233809212",
+          "uuid": "5a9603b8-0268-49ff-b7bd-d2ceed276130",
           "title": "Portal Buonny E2E - Campo Esqueci Minha Senha",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "acessar, esqueci minha senha",
               "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha acessar, esqueci minha senha",
               "timedOut": null,
-              "duration": 11531,
+              "duration": 8674,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(\".esqueci-senha\").click();\ncy.url().should(\"include\", \"/usuarios/esqueci_minha_senha\");\ncy.get(\"h1\").should(\"contain.text\", \"Esqueceu sua senha?\");",
               "err": {},
-              "uuid": "25b38573-2abb-4047-8df6-7c4b03e94e3e",
-              "parentUUID": "314147e4-49b6-478f-8ce6-14a233809212",
+              "uuid": "83b7f86f-20e8-4d25-ab46-dbe43c44148c",
+              "parentUUID": "5a9603b8-0268-49ff-b7bd-d2ceed276130",
               "isHook": false,
               "skipped": false
             },
@@ -56,30 +56,30 @@
               "title": "recuperar senha, usuario inexistente",
               "fullTitle": "Portal Buonny E2E - Campo Esqueci Minha Senha recuperar senha, usuario inexistente",
               "timedOut": null,
-              "duration": 10125,
+              "duration": 6251,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"/usuarios/esqueci_minha_senha\");\ncy.get(\"#UsuarioApelido\").type(\"admin123\", {\n  log: false\n});\ncy.get(\".submit-button\").click();\ncy.get(\".help-block.error-message\").should(\"be.visible\").should(\"contain.text\", \"Usuário não encontrado\");",
               "err": {},
-              "uuid": "78424d61-7608-450c-937c-6643308d4c04",
-              "parentUUID": "314147e4-49b6-478f-8ce6-14a233809212",
+              "uuid": "2efef51d-a03e-4ee2-869d-369b5da789d2",
+              "parentUUID": "5a9603b8-0268-49ff-b7bd-d2ceed276130",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "25b38573-2abb-4047-8df6-7c4b03e94e3e",
-            "78424d61-7608-450c-937c-6643308d4c04"
+            "83b7f86f-20e8-4d25-ab46-dbe43c44148c",
+            "2efef51d-a03e-4ee2-869d-369b5da789d2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 21656,
+          "duration": 14925,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -102,7 +102,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "[name]-report",
+        "reportFilename": "mochawesome",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -116,8 +116,7 @@
         "reportDir": "cypress/results",
         "overwrite": false,
         "html": true,
-        "json": true,
-        "reportFilename": "[name]-report"
+        "json": true
       },
       "version": "6.3.0"
     }

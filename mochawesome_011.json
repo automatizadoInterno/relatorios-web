@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-21T14:34:40.069Z",
-    "end": "2025-10-21T14:35:39.424Z",
-    "duration": 59355,
+    "start": "2025-10-21T16:04:48.576Z",
+    "end": "2025-10-21T16:05:47.902Z",
+    "duration": 59326,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "d8759c80-5cb1-4069-b069-34547490f29f",
+      "uuid": "0c1a1919-65a2-4b6a-b2ea-7da614503143",
       "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/003 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/002.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "59dcd10c-93ca-4431-8f08-eb1334eafbe1",
+          "uuid": "4be6785b-4334-4664-8b16-dae554377c36",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validação do campo 'Cliente', na alteração de itinerários",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros Validação do campo 'Cliente', na alteração de itinerários",
               "timedOut": null,
-              "duration": 14925,
+              "duration": 19458,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\"input.btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Informe um cliente\");",
               "err": {},
-              "uuid": "d20dbede-e776-4e63-ab34-5f0dc437e747",
-              "parentUUID": "59dcd10c-93ca-4431-8f08-eb1334eafbe1",
+              "uuid": "77bc87e0-6c29-45a3-a5e1-6046244ebb62",
+              "parentUUID": "4be6785b-4334-4664-8b16-dae554377c36",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "lnclusão de Itinerários, validação do campo 'Local Parada'",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros lnclusão de Itinerários, validação do campo 'Local Parada'",
               "timedOut": null,
-              "duration": 43529,
+              "duration": 38979,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-globe\", {\n    timeout: 10000\n  }).click();\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".help-block\").should(\"contain\", \"Informe o destino da SM\");\n});",
               "err": {},
-              "uuid": "3bd9e900-046d-4a67-867e-aa51c58f6ddb",
-              "parentUUID": "59dcd10c-93ca-4431-8f08-eb1334eafbe1",
+              "uuid": "2810fa18-4815-45d9-bfbe-9fdddea31523",
+              "parentUUID": "4be6785b-4334-4664-8b16-dae554377c36",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d20dbede-e776-4e63-ab34-5f0dc437e747",
-            "3bd9e900-046d-4a67-867e-aa51c58f6ddb"
+            "77bc87e0-6c29-45a3-a5e1-6046244ebb62",
+            "2810fa18-4815-45d9-bfbe-9fdddea31523"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 58454,
+          "duration": 58437,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -102,7 +102,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "[name]-report",
+        "reportFilename": "mochawesome",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -116,8 +116,7 @@
         "reportDir": "cypress/results",
         "overwrite": false,
         "html": true,
-        "json": true,
-        "reportFilename": "[name]-report"
+        "json": true
       },
       "version": "6.3.0"
     }
