@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-21T15:53:59.092Z",
-    "end": "2025-10-21T15:56:40.872Z",
-    "duration": 161780,
+    "start": "2025-10-21T19:47:50.959Z",
+    "end": "2025-10-21T19:50:30.432Z",
+    "duration": 159473,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5a9435ff-43fb-478d-869b-35217e87f932",
+      "uuid": "cc4692b6-531e-424d-aaec-6a563b29abe4",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c1fa12b2-82d6-4979-97cb-dc6b7aa78756",
+          "uuid": "432792ad-5c4f-4724-9873-3d209a020baf",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "gerar sm, preenchendo todos os campos obrigatórios",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM gerar sm, preenchendo todos os campos obrigatórios",
               "timedOut": null,
-              "duration": 161505,
+              "duration": 159028,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.consultaParaIncluirViaAPI();\ncy.get(\"#TViagViagem2ViagTtraCodigo\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\", {\n  timeout: 10000\n}).should(\"exist\").click({\n  force: true\n});\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 20000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\", {\n  timeout: 10000\n}).type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\", {\n  timeout: 10000\n}).type(horaSm);\ncy.get(\"#Itinerario0DataPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(dataChegadaSm);\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#Itinerario0HoraPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(\"13:00\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\", {\n  timeout: 10000\n}).select(\"CACAU\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\", {\n  timeout: 10000\n}).type(\"99,00\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\".help-block.alert-success.form-actions.well\", {\n  timeout: 65000\n}).should(\"be.visible\").should(\"contain.text\", \"Os dados informados foram armazenados com sucesso para a SM\").invoke(\"text\").then(text => {\n  const match = text.match(/Nº (\\d+)/);\n  if (match) {\n    numeroSM = match[1];\n    cy.log(\"Número da SM:\", numeroSM);\n  } else {\n    cy.log(\"Número não encontrado!\");\n  }\n});\ncy.get(\".help-block\", {\n  timeout: 15000\n}).should(\"be.visible\").invoke(\"text\").then(texto => {\n  // Exemplo de texto: \"Os dados informados foram armazenados com sucesso para a SM de Nº 31693452!\"\n  const regex = /SM\\s*(?:de)?\\s*(?:Nº|número)?\\s*(\\d+)/i; // Captura o número após 'SM de Nº'\n  const match = texto.match(regex);\n  if (match) {\n    const numeroSM = match[1]; // extrai apenas o número\n    cy.log(\"Número SM capturado:\", numeroSM);\n    // Salva o arquivo JSON no fixtures\n    cy.writeFile(\"cypress/fixtures/numeroSM.json\", {\n      numeroSM\n    });\n    cy.log(numeroSM);\n  } else {\n    throw new Error(`Número SM não encontrado na mensagem: \"${texto}\"`);\n  }\n});",
               "err": {},
-              "uuid": "70d3ac53-254e-47e2-b6e0-486530c9a51c",
-              "parentUUID": "c1fa12b2-82d6-4979-97cb-dc6b7aa78756",
+              "uuid": "f807a6b6-a3cd-4dc0-bb1b-1c58fcfd61ba",
+              "parentUUID": "432792ad-5c4f-4724-9873-3d209a020baf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "70d3ac53-254e-47e2-b6e0-486530c9a51c"
+            "f807a6b6-a3cd-4dc0-bb1b-1c58fcfd61ba"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 161505,
+          "duration": 159028,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

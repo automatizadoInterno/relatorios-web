@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-21T16:18:54.175Z",
-    "end": "2025-10-21T16:19:13.317Z",
-    "duration": 19142,
+    "start": "2025-10-21T20:19:20.488Z",
+    "end": "2025-10-21T20:19:44.210Z",
+    "duration": 23722,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f42c5f77-1808-49a0-b515-59ff54f0dffb",
+      "uuid": "1d450828-ebd7-4808-980c-59570bc7405b",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/002.e2e-consulta-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/002.e2e-consulta-erros-BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0f956be6-7301-42d0-a632-7381792bad0d",
+          "uuid": "a8703e60-764e-4108-8379-9427b0082498",
           "title": "Buonny Check E2E - Consulta de profissional - Validação de Erros",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Campos obrigatórios vazios",
               "fullTitle": "Buonny Check E2E - Consulta de profissional - Validação de Erros Campos obrigatórios vazios",
               "timedOut": null,
-              "duration": 12959,
+              "duration": 16141,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/consulta-profissional\"] > .menu-label').should(\"be.visible\").click({\n  timeout: 30000\n});\ncy.wait(5000);\ncy.get(\".mat-card-actions > :nth-child(1) > .mat-button-wrapper\").click({\n  force: true\n});\ncy.get(\".button-default\").click({\n  force: true\n});\ncy.get(\"mat-error:visible\").should(\"have.length\", 8).each($error => {\n  cy.wrap($error).should(\"contain.text\", \"Campo obrigatório\");\n});",
               "err": {},
-              "uuid": "d002c4ea-a3db-4632-ad09-08b1171ec4eb",
-              "parentUUID": "0f956be6-7301-42d0-a632-7381792bad0d",
+              "uuid": "35f5eca0-e43f-4497-a1c8-ad7340747c69",
+              "parentUUID": "a8703e60-764e-4108-8379-9427b0082498",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d002c4ea-a3db-4632-ad09-08b1171ec4eb"
+            "35f5eca0-e43f-4497-a1c8-ad7340747c69"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12959,
+          "duration": 16141,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
