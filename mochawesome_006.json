@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-22T12:31:53.220Z",
-    "end": "2025-10-22T12:35:05.740Z",
-    "duration": 192520,
-    "testsRegistered": 1,
+    "start": "2025-10-22T14:01:30.075Z",
+    "end": "2025-10-22T14:03:27.382Z",
+    "duration": 117307,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,49 +18,68 @@
   },
   "results": [
     {
-      "uuid": "e24972da-9af7-4fd6-836b-5ef026b5291b",
+      "uuid": "d7b4db81-79ba-4d0e-bdf1-ac60aa31cc9c",
       "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - E2E Inclusão de SM/002 - Inclusão de  SM Tela 002/001.e2e-inclusao-sm-tela-002.cy.js",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/007.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/007.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "d2ca0a16-6c08-4d09-ac1d-83b57154432b",
-          "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM",
+          "uuid": "f1a7ff3c-c0e4-413b-a1c1-3871eef4927a",
+          "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "gerar sm, preenchendo todos os campos obrigatórios",
-              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM gerar sm, preenchendo todos os campos obrigatórios",
+              "title": "Alteração de Nota Fiscal e Produto na SM",
+              "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alteração de Nota Fiscal e Produto na SM",
               "timedOut": null,
-              "duration": 190963,
+              "duration": 46341,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.consultaParaIncluirViaAPI();\ncy.get(\"#TViagViagem2ViagTtraCodigo\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\", {\n  timeout: 10000\n}).should(\"exist\").click({\n  force: true\n});\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 20000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\", {\n  timeout: 10000\n}).type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\", {\n  timeout: 10000\n}).type(horaSm);\ncy.get(\"#Itinerario0DataPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(dataChegadaSm);\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#Itinerario0HoraPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(\"13:00\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\", {\n  timeout: 10000\n}).select(\"CACAU\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\", {\n  timeout: 10000\n}).type(\"99,00\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\".help-block.alert-success.form-actions.well\", {\n  timeout: 65000\n}).should(\"be.visible\").should(\"contain.text\", \"Os dados informados foram armazenados com sucesso para a SM\").invoke(\"text\").then(text => {\n  const match = text.match(/Nº (\\d+)/);\n  if (match) {\n    numeroSM = match[1];\n    cy.log(\"Número da SM:\", numeroSM);\n  } else {\n    cy.log(\"Número não encontrado!\");\n  }\n});\ncy.get(\".help-block\", {\n  timeout: 15000\n}).should(\"be.visible\").invoke(\"text\").then(texto => {\n  // Exemplo de texto: \"Os dados informados foram armazenados com sucesso para a SM de Nº 31693452!\"\n  const regex = /SM\\s*(?:de)?\\s*(?:Nº|número)?\\s*(\\d+)/i; // Captura o número após 'SM de Nº'\n  const match = texto.match(regex);\n  if (match) {\n    const numeroSM = match[1]; // extrai apenas o número\n    cy.log(\"Número SM capturado:\", numeroSM);\n    // Salva o arquivo JSON no fixtures\n    cy.writeFile(\"cypress/fixtures/numeroSM.json\", {\n      numeroSM\n    });\n    cy.log(numeroSM);\n  } else {\n    throw new Error(`Número SM não encontrado na mensagem: \"${texto}\"`);\n  }\n});",
+              "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.log(numeroSM);\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-list-alt\", {\n    timeout: 20000\n  }).click();\n  cy.get('[id^=\"Itinerario\"][id$=\"DataPrevisaoDeChegada\"]').type(`${dataChegadaSm}`, {\n    force: true\n  });\n  cy.get(\"#Itinerario0HoraPrevisaoDeChegada\").clear({\n    force: true\n  }).type(horaSm);\n  cy.get(\"#Itinerario0DadosDaCargaCarga0Nf\").clear({\n    force: true\n  }).type(\"123\");\n  cy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\").select(\"CACAU\", {\n    force: true\n  });\n  cy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\").clear({\n    force: true\n  }).type(\"5267\");\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".alert\").contains(\"Os dados informados foram armazenados com sucesso!\", {\n    timeout: 60000\n  });\n});",
               "err": {},
-              "uuid": "cedb380e-cffb-42f2-a5be-1ed39a4907f4",
-              "parentUUID": "d2ca0a16-6c08-4d09-ac1d-83b57154432b",
+              "uuid": "b08934fc-164b-4c62-9af4-63f529544602",
+              "parentUUID": "f1a7ff3c-c0e4-413b-a1c1-3871eef4927a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alterar Itinerário, adicionar parada com sucesso",
+              "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alterar Itinerário, adicionar parada com sucesso",
+              "timedOut": null,
+              "duration": 69415,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  console.log(numeroSM);\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-globe\", {\n    timeout: 20000\n  }).click();\n  cy.get(\"#Itinerario0RefeCodigoVisual-search\").click();\n  cy.get(\":nth-child(4) > input.btn\", {\n    timeout: 20000\n  }).click();\n  cy.get('[codigo=\"13577259\"] > :nth-child(1)', {\n    timeout: 20000\n  }).click();\n  cy.get(\".blockOverlay\", {\n    timeout: 20000\n  }).should(\"not.exist\");\n  cy.get(\"#Itinerario0DataPrevisaoDeChegada\").type(dataChegadaSm);\n  cy.get(\"#Itinerario0HoraPrevisaoDeChegada\").type(\"13:00\");\n  cy.get(\"#Itinerario0TipoParada\").select(\"12\");\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".alert\").contains(\"Os dados informados foram armazenados com sucesso!\", {\n    timeout: 60000\n  });\n});",
+              "err": {},
+              "uuid": "69d282b6-72bb-4189-bc45-d946a999761d",
+              "parentUUID": "f1a7ff3c-c0e4-413b-a1c1-3871eef4927a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cedb380e-cffb-42f2-a5be-1ed39a4907f4"
+            "b08934fc-164b-4c62-9af4-63f529544602",
+            "69d282b6-72bb-4189-bc45-d946a999761d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 190963,
+          "duration": 115756,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +103,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -96,7 +115,7 @@
       "options": {
         "reportDir": "cypress/results",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true
       },
       "version": "6.3.0"

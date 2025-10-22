@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2025-10-22T12:26:07.638Z",
-    "end": "2025-10-22T12:27:30.522Z",
-    "duration": 82884,
+    "start": "2025-10-22T13:49:06.329Z",
+    "end": "2025-10-22T13:51:07.919Z",
+    "duration": 121590,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,41 +18,41 @@
   },
   "results": [
     {
-      "uuid": "5b255f7e-6e8d-46c4-a70d-b6db52fefa98",
+      "uuid": "9263b488-d6cc-4b14-aead-84ec29b2e6b8",
       "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "55602bd1-a1da-47b8-935d-3ad86dc620ef",
-          "title": "Portal Buonny E2E - Login com credenciais válidas",
+          "uuid": "b09a9c13-6831-48a4-b843-e5037aab15ae",
+          "title": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Login PB sucesso",
-              "fullTitle": "Portal Buonny E2E - Login com credenciais válidas Login PB sucesso",
+              "title": "Avançar,preenchendo todos campos obrigatórios",
+              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso Avançar,preenchendo todos campos obrigatórios",
               "timedOut": null,
-              "duration": 82432,
+              "duration": 121089,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "const user = Cypress.env(\"user_name\");\nconst password = Cypress.env(\"user_password\");\nconst options = {\n  cacheSession: false\n};\ncy.login(user, password, options);\ncy.url().should(\"include\", \"/Painel/modulo_admin\");",
+              "code": "const entradas = {\n  codCliente: \"87906\",\n  transportador: \"BUONNY PROJETOS E SERVICOS\",\n  cpfMotorista: \"64614686095\",\n  cpfAjudante: \"075.421.058-84\",\n  placaTeste: \"TST1A23\"\n};\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(entradas.codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TViagViagem2CodigoTransportador\", {\n  timeout: 10000\n}).select(entradas.transportador);\ncy.get(\"#TMotoMotorista2MotoCpf\").type(entradas.cpfMotorista);\ncy.get(\"#TMotoMotorista2Tipo\").select(\"CARRETEIRO\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#TMotoMotorista2MotoCpfAjudante\").type(entradas.cpfAjudante);\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TVeicVeiculo20VeicPlaca\").type(entradas.placaTeste);\ncy.wait(5000);\ncy.get(\"#consulta-incluir\").click();\ncy.url().should(\"include\", \"/SolicitacoesMonitoramento2/incluir/N/N/\");",
               "err": {
-                "message": "CypressError: Timed out after waiting `63000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `63000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `builds/btecsys/portal/testesAutomatizados/cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
-                "estack": "CypressError: Timed out after waiting `63000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `63000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `builds/btecsys/portal/testesAutomatizados/cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:134221:64)\n    at <unknown> (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:134537:16)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js:9:11)",
+                "message": "AssertionError: Timed out retrying after 60000ms: expected 'https://tstportal.buonny.com.br/portal/solicitacoes_monitoramento2/consultar_para_incluir' to include '/SolicitacoesMonitoramento2/incluir/N/N/'",
+                "estack": "AssertionError: Timed out retrying after 60000ms: expected 'https://tstportal.buonny.com.br/portal/solicitacoes_monitoramento2/consultar_para_incluir' to include '/SolicitacoesMonitoramento2/incluir/N/N/'\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js:43:17)",
                 "diff": null
               },
-              "uuid": "ed25670d-6f8d-4fac-a909-ba581b64b6fa",
-              "parentUUID": "55602bd1-a1da-47b8-935d-3ad86dc620ef",
+              "uuid": "fafc25c5-c55c-40bf-9e07-ecf927bb7256",
+              "parentUUID": "b09a9c13-6831-48a4-b843-e5037aab15ae",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "ed25670d-6f8d-4fac-a909-ba581b64b6fa"
+            "fafc25c5-c55c-40bf-9e07-ecf927bb7256"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 82432,
+          "duration": 121089,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -88,7 +88,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -100,7 +100,7 @@
       "options": {
         "reportDir": "cypress/results",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true
       },
       "version": "6.3.0"

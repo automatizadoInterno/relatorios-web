@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-22T12:27:39.098Z",
-    "end": "2025-10-22T12:28:18.648Z",
-    "duration": 39550,
+    "start": "2025-10-22T13:51:18.179Z",
+    "end": "2025-10-22T13:52:02.466Z",
+    "duration": 44287,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "eaa3ad17-96dc-45e9-a740-48336705bb65",
+      "uuid": "01886783-a72f-4d13-8efd-1a42d591a6a4",
       "title": "",
-      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
-      "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/002.e2e-logout-PB.cy.js",
+      "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
+      "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "7d3fe504-62dd-4369-81ed-742462e779b8",
-          "title": "Portal Buonny E2E - Logout",
+          "uuid": "b8ff4033-999b-415c-8a42-8f2cd92b4363",
+          "title": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "logout, com sucesso",
-              "fullTitle": "Portal Buonny E2E - Logout logout, com sucesso",
+              "title": "Avançar sem preencher campos obrigatórios e validar erros",
+              "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios Avançar sem preencher campos obrigatórios e validar erros",
               "timedOut": null,
-              "duration": 37878,
+              "duration": 43524,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.logout();\ncy.url().should(\"include\", \"/\");",
+              "code": "const codCliente = \"87906\";\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"Selecione uma Gerenciadora\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Transportador não selecionado\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o tipo do profissional\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o veículo\").and(\"be.visible\");\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"Selecione uma Gerenciadora\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");",
               "err": {},
-              "uuid": "536212be-1f65-4928-8185-118f07d911c3",
-              "parentUUID": "7d3fe504-62dd-4369-81ed-742462e779b8",
+              "uuid": "b7c7f515-7a5a-4384-a0bf-3da5c36edd66",
+              "parentUUID": "b8ff4033-999b-415c-8a42-8f2cd92b4363",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "536212be-1f65-4928-8185-118f07d911c3"
+            "b7c7f515-7a5a-4384-a0bf-3da5c36edd66"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 37878,
+          "duration": 43524,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -96,7 +96,7 @@
       "options": {
         "reportDir": "cypress/results",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true
       },
       "version": "6.3.0"
