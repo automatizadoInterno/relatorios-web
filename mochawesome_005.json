@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-10-22T14:00:30.079Z",
-    "end": "2025-10-22T14:01:21.609Z",
-    "duration": 51530,
+    "start": "2025-10-22T14:35:54.418Z",
+    "end": "2025-10-22T14:36:50.613Z",
+    "duration": 56195,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e3d0d490-1e86-469c-ac87-ba836ad60542",
+      "uuid": "c603060e-fc9f-49cc-a953-2dab6a849d72",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/006.e2e-alteracao-placa-motorista-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/006.e2e-alteracao-placa-motorista-erros.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3c4bc6e5-2a86-4bcf-a019-86366f3056a9",
+          "uuid": "0cd962ae-04f3-479b-9330-991640273e5e",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validação do Campo 'Cliente' e 'SM' na Alteração de Placa, Motorista e Categoria  ",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros Validação do Campo 'Cliente' e 'SM' na Alteração de Placa, Motorista e Categoria  ",
               "timedOut": null,
-              "duration": 18824,
+              "duration": 22876,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\":nth-child(3) > .btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Cliente não informado\");\ncy.get(\"#TViagViagemCodigoCliente\").type(\"543\");\ncy.get(\":nth-child(3) > .btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"SM não informada\");",
               "err": {},
-              "uuid": "0b83989e-2047-4478-a89a-b2a68c28a0ef",
-              "parentUUID": "3c4bc6e5-2a86-4bcf-a019-86366f3056a9",
+              "uuid": "b4aa7a94-4f5c-4833-8ae2-68e4ba549c81",
+              "parentUUID": "0cd962ae-04f3-479b-9330-991640273e5e",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Tentar avançar com uma Placa e CPF não registrados, validando mensagens de erro",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros Tentar avançar com uma Placa e CPF não registrados, validando mensagens de erro",
               "timedOut": null,
-              "duration": 31768,
+              "duration": 32217,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\":nth-child(3) > .btn\").click();\n  cy.wait(5000);\n  cy.get(\"#Recebsm0Placa\").clear().type(\"ebj8484\");\n  cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"10454578745\");\n  cy.get(\"input.btn\").click();\n  cy.get('[data-seq=\"0\"] > :nth-child(1) > .control-group > .help-block').should(\"contain\", \"O veículo informado é invalido\");\n  cy.get(\".row-fluid > .error > .help-block\").should(\"contain\", \"Informe o Motorista\");\n});",
               "err": {},
-              "uuid": "3c6f4f65-6066-4e19-a366-112d04cb978e",
-              "parentUUID": "3c4bc6e5-2a86-4bcf-a019-86366f3056a9",
+              "uuid": "133884b3-932b-4e85-96aa-4eb19951b588",
+              "parentUUID": "0cd962ae-04f3-479b-9330-991640273e5e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0b83989e-2047-4478-a89a-b2a68c28a0ef",
-            "3c6f4f65-6066-4e19-a366-112d04cb978e"
+            "b4aa7a94-4f5c-4833-8ae2-68e4ba549c81",
+            "133884b3-932b-4e85-96aa-4eb19951b588"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 50592,
+          "duration": 55093,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
