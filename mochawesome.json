@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-10-21T19:42:30.576Z",
-    "end": "2025-10-21T19:43:00.279Z",
-    "duration": 29703,
+    "failures": 1,
+    "start": "2025-10-22T12:26:07.638Z",
+    "end": "2025-10-22T12:27:30.522Z",
+    "duration": 82884,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "246f380b-ec30-4190-999b-c0ff88190ae6",
+      "uuid": "5b255f7e-6e8d-46c4-a70d-b6db52fefa98",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ca5346b8-3f0d-401f-95bd-4e0af1bf7b42",
+          "uuid": "55602bd1-a1da-47b8-935d-3ad86dc620ef",
           "title": "Portal Buonny E2E - Login com credenciais válidas",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "Login PB sucesso",
               "fullTitle": "Portal Buonny E2E - Login com credenciais válidas Login PB sucesso",
               "timedOut": null,
-              "duration": 29112,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 82432,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const user = Cypress.env(\"user_name\");\nconst password = Cypress.env(\"user_password\");\nconst options = {\n  cacheSession: false\n};\ncy.login(user, password, options);\ncy.url().should(\"include\", \"/Painel/modulo_admin\");",
-              "err": {},
-              "uuid": "c75595e8-eb78-4f0c-9cbd-efec2221b144",
-              "parentUUID": "ca5346b8-3f0d-401f-95bd-4e0af1bf7b42",
+              "err": {
+                "message": "CypressError: Timed out after waiting `63000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `63000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `builds/btecsys/portal/testesAutomatizados/cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `63000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `63000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `builds/btecsys/portal/testesAutomatizados/cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:134221:64)\n    at <unknown> (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:134537:16)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/001 - E2E Login/001.e2e-login-PB.cy.js:9:11)",
+                "diff": null
+              },
+              "uuid": "ed25670d-6f8d-4fac-a909-ba581b64b6fa",
+              "parentUUID": "55602bd1-a1da-47b8-935d-3ad86dc620ef",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "c75595e8-eb78-4f0c-9cbd-efec2221b144"
+          "passes": [],
+          "failures": [
+            "ed25670d-6f8d-4fac-a909-ba581b64b6fa"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 29112,
+          "duration": 82432,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
