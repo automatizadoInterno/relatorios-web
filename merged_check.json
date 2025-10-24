@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-10-23T14:28:25.140Z",
-    "end": "2025-10-23T14:34:45.320Z",
-    "duration": 380180
+    "start": "2025-10-24T18:51:24.663Z",
+    "end": "2025-10-24T18:57:35.065Z",
+    "duration": 370402
   },
   "results": [
     {
-      "uuid": "cd880e95-2406-44b9-887f-9702b84506bc",
+      "uuid": "4e592e58-4547-4542-a5ba-b9822b631849",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/002.e2e-logout-com-sucesso-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/002.e2e-logout-com-sucesso-BC.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3104274c-464a-4a2d-9550-0f850f95ae0f",
+          "uuid": "75203037-18a8-4d23-84a7-35e02fd4aafc",
           "title": "Buonny Check E2E - Login - Logout com sucesso",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - Logout com sucesso sucesso",
               "timedOut": null,
-              "duration": 14217,
+              "duration": 13560,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(\".mat-menu-trigger > .mat-button-wrapper > .mat-icon\", {\n  timeout: 20000\n}).click();\ncy.get(\".mat-menu-content > :nth-child(3)\").click();\ncy.url({\n  timeout: 20000\n}).should(\"include\", \"https://tstbuonnycheck.buonny.com.br/#/signin\");",
               "err": {},
-              "uuid": "c4984d73-8f4b-4bd9-88ce-d6dd9b3e280e",
-              "parentUUID": "3104274c-464a-4a2d-9550-0f850f95ae0f",
+              "uuid": "0c6e6307-f141-44f0-93a2-b52ab2388be9",
+              "parentUUID": "75203037-18a8-4d23-84a7-35e02fd4aafc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c4984d73-8f4b-4bd9-88ce-d6dd9b3e280e"
+            "0c6e6307-f141-44f0-93a2-b52ab2388be9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14217,
+          "duration": 13560,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "c1754c98-9e59-4af8-b6e2-5be19af4baa9",
+      "uuid": "56d61635-1f51-4316-8634-84b1b8b3d5fd",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/003.e2e-esqueci-minha-senha-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/003.e2e-esqueci-minha-senha-BC.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fcaab562-9a9d-4117-ba40-c44882723431",
+          "uuid": "bad7ec90-1e01-4b61-a199-715d8021150c",
           "title": "Buonny Check E2E - Login - Redirecionamento para a recuperação de senha",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - Redirecionamento para a recuperação de senha sucesso",
               "timedOut": null,
-              "duration": 13045,
+              "duration": 14743,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get('a[target=\"_blank\"]').invoke(\"removeAttr\", \"target\");\ncy.get(\"#mat-hint-0 > a\").click({\n  force: true\n});\ncy.origin(\"https://tstportal.buonny.com.br\", () => {\n  cy.url().should(\"include\", \"https://tstportal.buonny.com.br/portal/usuarios/esqueci_minha_senha\");\n});",
               "err": {},
-              "uuid": "2318b42a-3e78-4b76-9b1b-6c6133ba562d",
-              "parentUUID": "fcaab562-9a9d-4117-ba40-c44882723431",
+              "uuid": "352db7f9-4b72-424b-a761-a324068b373b",
+              "parentUUID": "bad7ec90-1e01-4b61-a199-715d8021150c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2318b42a-3e78-4b76-9b1b-6c6133ba562d"
+            "352db7f9-4b72-424b-a761-a324068b373b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13045,
+          "duration": 14743,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "fdcc8ed3-4c5b-4139-84b9-9be5c7748894",
+      "uuid": "8ac5276c-a96a-48c6-a193-16d373c88da8",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/004.e2e-login-vazio-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/004.e2e-login-vazio-BC.cy.js",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0d9ff984-32ff-4b98-80cd-fb0551324b37",
+          "uuid": "662bc621-3cd8-4e19-a9f4-42d6ab57e3cf",
           "title": "Buonny Check E2E - Login - campos vazios",
           "fullFile": "",
           "file": "",
@@ -154,7 +154,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - campos vazios sucesso",
               "timedOut": null,
-              "duration": 6273,
+              "duration": 5988,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -163,20 +163,20 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-1\").type(Cypress.env(\"user_passwordBC\"), {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.get(\"#mat-error-0\", {\n  timeout: 20000\n}).should(\"have.text\", \"Campo obrigatório.\").should(\"be.visible\");",
               "err": {},
-              "uuid": "2e91d61b-a94d-4152-8f7c-fedc31d3d54b",
-              "parentUUID": "0d9ff984-32ff-4b98-80cd-fb0551324b37",
+              "uuid": "e501aca4-9307-4ebc-9901-0d9b40b99ac7",
+              "parentUUID": "662bc621-3cd8-4e19-a9f4-42d6ab57e3cf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2e91d61b-a94d-4152-8f7c-fedc31d3d54b"
+            "e501aca4-9307-4ebc-9901-0d9b40b99ac7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6273,
+          "duration": 5988,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -192,7 +192,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "23c0d5c7-f9db-4909-925c-c68af24385d8",
+      "uuid": "558be9a0-43aa-4635-a9c0-5f6035422389",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/005.e2e-login-erros-BC.cy.js",
@@ -201,7 +201,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "54b54bc6-ecd0-4c4f-b49a-d2bd849555f8",
+          "uuid": "f5809223-0b79-4c62-860a-7435aecf70aa",
           "title": "Buonny Check E2E - Login - credenciais inválidas'",
           "fullFile": "",
           "file": "",
@@ -212,7 +212,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais inválidas' sucesso",
               "timedOut": null,
-              "duration": 7984,
+              "duration": 7377,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -221,20 +221,20 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(`123`, {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.get(\".mat-error\", {\n  timeout: 20000\n}).should(\"have.text\", \"Usuário ou senha incorretos.\").should(\"be.visible\");",
               "err": {},
-              "uuid": "e949f4c7-2d85-428d-83de-e3c487598cc0",
-              "parentUUID": "54b54bc6-ecd0-4c4f-b49a-d2bd849555f8",
+              "uuid": "71ac6f57-69f2-45c5-9d30-c8cdc01c0215",
+              "parentUUID": "f5809223-0b79-4c62-860a-7435aecf70aa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e949f4c7-2d85-428d-83de-e3c487598cc0"
+            "71ac6f57-69f2-45c5-9d30-c8cdc01c0215"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7984,
+          "duration": 7377,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -250,7 +250,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "41934204-1e4e-425a-961e-d4bf2829c30d",
+      "uuid": "2b69ce22-6d4e-49ff-9a01-ec671ad515c0",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/002 - E2E Inclusão de ficha/006.e2e-inclusão_ficha_com_sucesso_BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/002 - E2E Inclusão de ficha/006.e2e-inclusão_ficha_com_sucesso_BC.cy.js",
@@ -259,7 +259,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fa07e059-0252-4c92-a48f-1902a7e26b38",
+          "uuid": "5787c4bb-6deb-4cd8-a437-e53e1b0790b5",
           "title": "Buonny Check E2E -Inclusão de ficha do profissional",
           "fullFile": "",
           "file": "",
@@ -270,7 +270,7 @@
               "title": "sucesso",
               "fullTitle": "Buonny Check E2E -Inclusão de ficha do profissional sucesso",
               "timedOut": null,
-              "duration": 133669,
+              "duration": 126349,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -279,20 +279,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/cadastro-ficha\"] > .menu-label').click({\n  timeout: 30000\n});\ncy.get(\"#mat-select-0\").click();\ncy.get(\".mat-option\").contains(/BUONNY CHECK(?! ST)/).click();\ncy.get(\":nth-child(3) > .nome > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"Buonny Projetos e Serviços LTDA\");\ncy.get(\":nth-child(3) > .mat-form-field-type-mat-select > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/TELEFONE/).click();\ncy.get(\":nth-child(3) > .dados > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"11922059878\");\ncy.get(\":nth-child(2) > .nome > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"Buonny Projetos e Serviços LTDA\");\ncy.get(\".dados-contato > :nth-child(2) > .mat-form-field-type-mat-select > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option-text\").contains(/E-MAIL/).click();\ncy.get(\":nth-child(2) > .dados > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"TESTES.AUTOMATIZADOS@buonny.com.br\");\ncy.get(\"#cdk-step-content-0-0 > form.ng-star-inserted > .mt-2 > .mat-focus-indicator > .mat-button-wrapper\").click();\ncy.get(\".ng-invalid.ng-star-inserted > :nth-child(2) > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/AGREGADO/).click();\ncy.get(\"#mat-radio-25\").click();\ncy.get(\"form.ng-untouched > .d-flex > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"478.535.513-12\");\ncy.wait(5000);\ncy.get(\".mat-form-field.ng-tns-c106-85 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").clear().type(\"Ricardo Monteiro Alves\");\n//cy.get(\"#mat-input-36\", { timeout: 10000 }).type(\"SONIA REGINA PERIN\");\ncy.get(\"body\").then($body => {\n  if ($body.find(\"#cdk-step-content-0-1 > form.ng-star-inserted > .dados-contato > legend > .mat-focus-indicator > .mat-button-wrapper > span\").length > 0) {\n    cy.get(\"#cdk-step-content-0-1 > form.ng-star-inserted > .dados-contato > legend > .mat-focus-indicator > .mat-button-wrapper > span\").click();\n  }\n});\ncy.get(\"#mat-select-value-49 > .mat-select-placeholder\").click();\ncy.get(\".mat-option\").contains(/COMERCIAL/).click();\ncy.get(\"#mat-input-37\").clear().type(\"Ricardo Monteiro Alves\");\ncy.get(\"#mat-input-38\").type(\"TESTES AUTOMATIZADOS\");\ncy.get(\"#cdk-step-content-0-1 > form.ng-star-inserted > .mt-2 > .mat-stepper-next\", {\n  timeout: 10000\n}).click();\ncy.get(\"#cdk-step-content-0-2 > form.ng-star-inserted > .mt-2 > .mat-stepper-next\", {\n  timeout: 10000\n}).click();\ncy.get(\"form.ng-untouched > :nth-child(6) > .celular-profissional > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"(27) 99692-7855\");\ncy.get(\"#cdk-step-content-0-3 > form.ng-untouched > .mt-2 > .mat-stepper-next\").click();\ncy.get(\"#cdk-step-content-0-4 > .ng-star-inserted > .mt-2 > .mat-stepper-next\").click();\ncy.get(\"#mat-input-20\").type(\"1000\");\ncy.get(\"#cdk-step-content-0-5 > form.ng-star-inserted > .mt-2 > .mat-stepper-next\").click();\ncy.get(\"#mat-radio-13\").click();\ncy.get(\"#mat-radio-15\").click();\ncy.get(\"#mat-radio-19\").click();\ncy.get(\"#mat-radio-21\").click();\ncy.get(\"#mat-radio-23\").click();\ncy.get(\"#mat-radio-11\").click();\ncy.get(\"#cdk-step-content-0-6 > .ng-star-inserted.ng-dirty > .mt-2 > .mat-raised-button > .mat-button-wrapper\").click();\ncy.get(\".mat-simple-snackbar > span\").then($span => {\n  const text = $span.text();\n  cy.get(\".mat-simple-snackbar > span\").then($span => {\n    const text = $span.text();\n    if (text === \"O profissional está em pesquisa. Aguarde o final das pesquisas.\") {\n      cy.log(\"Profissional está em pesquisa. Teste OK.\");\n    } else {\n      cy.get(\".mat-basic > .mat-button-wrapper\").click();\n      cy.get(\".mat-simple-snackbar > span\").should(\"have.text\", \"Ficha cadastrada com sucesso.\");\n    }\n  });\n});",
               "err": {},
-              "uuid": "e446c0f5-60cd-4a2e-92a5-062b093fcd6e",
-              "parentUUID": "fa07e059-0252-4c92-a48f-1902a7e26b38",
+              "uuid": "e0e2feae-8e27-40e1-aa00-a3e4de6d92f3",
+              "parentUUID": "5787c4bb-6deb-4cd8-a437-e53e1b0790b5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e446c0f5-60cd-4a2e-92a5-062b093fcd6e"
+            "e0e2feae-8e27-40e1-aa00-a3e4de6d92f3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 133669,
+          "duration": 126349,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -308,7 +308,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "278385ca-46e6-411c-844c-cfd5991fec74",
+      "uuid": "686ddb85-ae2c-46af-bf94-ecb358321a40",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/007.e2e-consulta-sucesso_BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/007.e2e-consulta-sucesso_BC.cy.js",
@@ -317,7 +317,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c91d5f6e-38d3-4099-8cfa-05d21b798aff",
+          "uuid": "1213cf11-711b-4035-b85d-1793147aa4ce",
           "title": "Buonny Check E2E - Consulta de profissional - Casos de sucesso",
           "fullFile": "",
           "file": "",
@@ -328,7 +328,7 @@
               "title": "Consultar status do profissional, com sucesso",
               "fullTitle": "Buonny Check E2E - Consulta de profissional - Casos de sucesso Consultar status do profissional, com sucesso",
               "timedOut": null,
-              "duration": 38755,
+              "duration": 32961,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -337,20 +337,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/consulta-profissional\"] > .menu-label').should(\"be.visible\").click({\n  timeout: 30000\n});\ncy.get(\"#mat-select-0\").click();\ncy.get(\".mat-option\").contains(/BUONNY CHECK(?! ST)/).click();\ncy.get(\"form.ng-untouched > .d-flex > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"646.146.860-95\");\ncy.get(\".mat-form-field.ng-tns-c106-13 > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"TST1A23\");\ncy.get(\".tipo-carga > .mat-form-field-wrapper > .mat-form-field-flex\").click();\ncy.get(\".mat-option\").contains(/AÇO/).click();\ncy.get(\".valor > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.contains(\"span.mat-option-text\", /De R\\$.*0,01.*100\\.000,00/).click();\ncy.get(\":nth-child(1) > .d-flex > .estado > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/SP/).click();\ncy.get(\":nth-child(6) > :nth-child(1) > .d-flex > .mat-form-field-type-mat-input > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"Adamantina\");\ncy.get(\":nth-child(2) > .d-flex > .estado > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").click();\ncy.get(\".mat-option\").contains(/SP/).click();\ncy.get(\":nth-child(2) > .d-flex > .mat-form-field-type-mat-input > .mat-form-field-wrapper > .mat-form-field-flex > .mat-form-field-infix\").type(\"Adamantina\");\ncy.get(\".button-default > .mat-button-wrapper\").click();\ncy.get(\".mr-3 > :nth-child(1) > :nth-child(1) > .ml-2\", {\n  timeout: 30000\n}).invoke(\"text\").should(\"match\", /PERFIL ADEQUADO AO RISCO|PERFIL ADEQUADO AO RISCO POR PRAZO|PERFIL COM INSUFICIÊNCIA DE DADOS|PERFIL DIVERGENTE|PERFIL EXPIRADO|EM ANALISE/);",
               "err": {},
-              "uuid": "b4263116-d16a-4e7b-ac7f-678cbbd67da7",
-              "parentUUID": "c91d5f6e-38d3-4099-8cfa-05d21b798aff",
+              "uuid": "af1eaffa-9029-436c-829e-142a7e2d45cb",
+              "parentUUID": "1213cf11-711b-4035-b85d-1793147aa4ce",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b4263116-d16a-4e7b-ac7f-678cbbd67da7"
+            "af1eaffa-9029-436c-829e-142a7e2d45cb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 38755,
+          "duration": 32961,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -366,7 +366,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "804d5b8b-9bd1-43ca-a630-6fdaea51cdcb",
+      "uuid": "02b2230f-74a0-4977-a4c6-d0f7a2d52170",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/008.e2e-consulta-erros-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/003 - E2E Consulta de Profssional/008.e2e-consulta-erros-BC.cy.js",
@@ -375,7 +375,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d23870a2-96a6-40f6-8403-7bbe16446554",
+          "uuid": "4148f87b-abdc-45b0-8056-e68d2fd78d1c",
           "title": "Buonny Check E2E - Consulta de profissional - Validação de Erros",
           "fullFile": "",
           "file": "",
@@ -386,7 +386,7 @@
               "title": "Campos obrigatórios vazios",
               "fullTitle": "Buonny Check E2E - Consulta de profissional - Validação de Erros Campos obrigatórios vazios",
               "timedOut": null,
-              "duration": 17862,
+              "duration": 15932,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -395,20 +395,20 @@
               "context": null,
               "code": "cy.get('[routerlink=\"/consulta-profissional\"] > .menu-label').should(\"be.visible\").click({\n  timeout: 30000\n});\ncy.wait(5000);\ncy.get(\".mat-card-actions > :nth-child(1) > .mat-button-wrapper\").click({\n  force: true\n});\ncy.get(\".button-default\").click({\n  force: true\n});\ncy.get(\"mat-error:visible\").should(\"have.length\", 8).each($error => {\n  cy.wrap($error).should(\"contain.text\", \"Campo obrigatório\");\n});",
               "err": {},
-              "uuid": "2ae1cd1b-cdb4-49a7-affa-9ee64bc179da",
-              "parentUUID": "d23870a2-96a6-40f6-8403-7bbe16446554",
+              "uuid": "8a7c2ba5-563f-46ac-aedc-1179b8c382e0",
+              "parentUUID": "4148f87b-abdc-45b0-8056-e68d2fd78d1c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2ae1cd1b-cdb4-49a7-affa-9ee64bc179da"
+            "8a7c2ba5-563f-46ac-aedc-1179b8c382e0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17862,
+          "duration": 15932,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -424,7 +424,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f4a23930-4856-471d-924f-1c1006f2dbf6",
+      "uuid": "e00ddb25-9fee-47c6-b00e-b3435560c448",
       "title": "",
       "fullFile": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/001.e2e-login-com-sucesso-BC.cy.js",
       "file": "cypress/e2e/web/002 - E2E Buonny Check/001 - E2E Login/001.e2e-login-com-sucesso-BC.cy.js",
@@ -433,7 +433,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ddf168f6-5279-4174-b017-09a6e5e1f838",
+          "uuid": "ab1a65da-2efc-4dfd-8587-0220e894b7f8",
           "title": "Buonny Check E2E - Login - credenciais válidas",
           "fullFile": "",
           "file": "",
@@ -444,7 +444,7 @@
               "title": "Buonny Check E2E - Login BC sucesso",
               "fullTitle": "Buonny Check E2E - Login - credenciais válidas Buonny Check E2E - Login BC sucesso",
               "timedOut": null,
-              "duration": 16179,
+              "duration": 17259,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -453,20 +453,20 @@
               "context": null,
               "code": "cy.visit(\"https://tstbuonnycheck.buonny.com.br/#/signin\");\ncy.get(\"#mat-input-0\").type(Cypress.env(\"user_nameBC\"), {\n  log: false\n});\ncy.get(\"#mat-input-1\").type(Cypress.env(\"user_passwordBC\"), {\n  log: false\n});\ncy.get(\".mat-card-actions > .mat-focus-indicator\").click({\n  timeout: 20000\n});\ncy.url({\n  timeout: 40000\n}).should(\"include\", \"https://tstbuonnycheck.buonny.com.br/#/dashboard\");",
               "err": {},
-              "uuid": "131db48e-c6d7-406e-a942-ce3f6860ecee",
-              "parentUUID": "ddf168f6-5279-4174-b017-09a6e5e1f838",
+              "uuid": "3078082c-d973-4972-9965-ce8f060ce25b",
+              "parentUUID": "ab1a65da-2efc-4dfd-8587-0220e894b7f8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "131db48e-c6d7-406e-a942-ce3f6860ecee"
+            "3078082c-d973-4972-9965-ce8f060ce25b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16179,
+          "duration": 17259,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

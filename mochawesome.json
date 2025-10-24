@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2025-10-23T14:28:24.923Z",
-    "end": "2025-10-23T14:30:40.196Z",
-    "duration": 135273,
+    "failures": 0,
+    "start": "2025-10-24T18:51:24.334Z",
+    "end": "2025-10-24T18:53:10.292Z",
+    "duration": 105958,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fa6436cd-03d4-49f7-b3b0-b816058329a3",
+      "uuid": "edffbe03-dc65-49eb-bb8e-9ad7b5e30321",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3236eb50-2a5c-4e64-bf91-f8e1221e3b6b",
+          "uuid": "5b4a0cbb-54e9-4fbb-ab86-7e666cca4c6f",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso",
           "fullFile": "",
           "file": "",
@@ -38,33 +38,29 @@
               "title": "Avançar,preenchendo todos campos obrigatórios",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso Avançar,preenchendo todos campos obrigatórios",
               "timedOut": null,
-              "duration": 134703,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 104855,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const entradas = {\n  codCliente: \"87906\",\n  transportador: \"BUONNY PROJETOS E SERVICOS\",\n  cpfMotorista: \"64614686095\",\n  cpfAjudante: \"075.421.058-84\",\n  placaTeste: \"TST1A23\"\n};\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(entradas.codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TViagViagem2CodigoTransportador\", {\n  timeout: 10000\n}).select(entradas.transportador);\ncy.get(\"#TMotoMotorista2MotoCpf\").type(entradas.cpfMotorista);\ncy.get(\"#TMotoMotorista2Tipo\").select(\"CARRETEIRO\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#TMotoMotorista2MotoCpfAjudante\").type(entradas.cpfAjudante);\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TVeicVeiculo20VeicPlaca\").type(entradas.placaTeste);\ncy.wait(5000);\ncy.get(\"#consulta-incluir\").click();\ncy.url().should(\"include\", \"/SolicitacoesMonitoramento2/incluir/N/N/\");",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 60000ms: expected 'https://tstportal.buonny.com.br/portal/solicitacoes_monitoramento2/consultar_para_incluir' to include '/SolicitacoesMonitoramento2/incluir/N/N/'",
-                "estack": "AssertionError: Timed out retrying after 60000ms: expected 'https://tstportal.buonny.com.br/portal/solicitacoes_monitoramento2/consultar_para_incluir' to include '/SolicitacoesMonitoramento2/incluir/N/N/'\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js:43:17)",
-                "diff": null
-              },
-              "uuid": "ecbab02a-cb30-4245-834a-2ab1183d96b0",
-              "parentUUID": "3236eb50-2a5c-4e64-bf91-f8e1221e3b6b",
+              "err": {},
+              "uuid": "0c9995a8-2bfa-4a8a-862b-62ed3d6db860",
+              "parentUUID": "5b4a0cbb-54e9-4fbb-ab86-7e666cca4c6f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "ecbab02a-cb30-4245-834a-2ab1183d96b0"
+          "passes": [
+            "0c9995a8-2bfa-4a8a-862b-62ed3d6db860"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 134703,
+          "duration": 104855,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

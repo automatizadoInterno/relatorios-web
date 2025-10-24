@@ -2,23 +2,23 @@
   "stats": {
     "suites": 8,
     "tests": 12,
-    "passes": 10,
+    "passes": 11,
     "pending": 0,
-    "failures": 2,
+    "failures": 1,
     "testsRegistered": 12,
-    "passPercent": 83.33333333333333,
+    "passPercent": 91.66666666666667,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-10-23T14:28:24.923Z",
-    "end": "2025-10-23T14:43:07.049Z",
-    "duration": 882126
+    "start": "2025-10-24T18:51:24.334Z",
+    "end": "2025-10-24T19:05:19.759Z",
+    "duration": 835425
   },
   "results": [
     {
-      "uuid": "52990e3a-9262-4159-9cd4-5ae8f0cbdf5f",
+      "uuid": "d53603f6-5db5-487f-85e5-1e57394ac2f6",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/002.e2e-inclusao-sm-erros-tela-001.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c7a6fecc-d4e6-4cfd-ab20-d4d2b9d2de45",
+          "uuid": "0afdb678-a685-4472-9887-98253734206f",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Avançar sem preencher campos obrigatórios e validar erros",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: Validar error em campos obrigatórios Avançar sem preencher campos obrigatórios e validar erros",
               "timedOut": null,
-              "duration": 50757,
+              "duration": 45643,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const codCliente = \"87906\";\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"Selecione uma Gerenciadora\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Transportador não selecionado\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o tipo do profissional\").and(\"be.visible\");\ncy.get(\".help-block.error-message\").should(\"contain\", \"Informe o veículo\").and(\"be.visible\");\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"Selecione uma Gerenciadora\");\ncy.get(\"#consulta-incluir\").click();\ncy.get(\".help-block.error-message\").should(\"contain\", \"Gerenciadora não selecionada\").and(\"be.visible\");",
               "err": {},
-              "uuid": "e65677da-2e9a-4f1c-bab7-3f5c1267d8dc",
-              "parentUUID": "c7a6fecc-d4e6-4cfd-ab20-d4d2b9d2de45",
+              "uuid": "aa5d93f5-6a21-4fed-95e0-870f85afd2ff",
+              "parentUUID": "0afdb678-a685-4472-9887-98253734206f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e65677da-2e9a-4f1c-bab7-3f5c1267d8dc"
+            "aa5d93f5-6a21-4fed-95e0-870f85afd2ff"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 50757,
+          "duration": 45643,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "16c0cb48-7110-45dd-86a9-8c779c7826f5",
+      "uuid": "f9232d24-47c2-4551-a918-6261d73661ac",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/002 - Inclusão de SM Tela 002/003.e2e-inclusao-sm-tela-002.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/002 - Inclusão de SM Tela 002/003.e2e-inclusao-sm-tela-002.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c6dff6e1-0486-47c4-8896-c112bae0423d",
+          "uuid": "775df935-6700-48a6-b464-4e6b72b48eec",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "gerar sm, preenchendo todos os campos obrigatórios",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Inclusão de SM gerar sm, preenchendo todos os campos obrigatórios",
               "timedOut": null,
-              "duration": 183753,
+              "duration": 170746,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "cy.consultaParaIncluirViaAPI();\ncy.get(\"#TViagViagem2ViagTtraCodigo\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\", {\n  timeout: 10000\n}).should(\"exist\").click({\n  force: true\n});\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 20000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\", {\n  timeout: 10000\n}).type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\", {\n  timeout: 10000\n}).type(horaSm);\ncy.get(\"#Itinerario0DataPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(dataChegadaSm);\ncy.get(\".blockOverlay\", {\n  timeout: 20000\n}).should(\"not.exist\");\ncy.get(\"#Itinerario0HoraPrevisaoDeChegada\", {\n  timeout: 10000\n}).type(\"13:00\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\", {\n  timeout: 10000\n}).select(\"CACAU\");\ncy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\", {\n  timeout: 10000\n}).type(\"99,00\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\".help-block.alert-success.form-actions.well\", {\n  timeout: 65000\n}).should(\"be.visible\").should(\"contain.text\", \"Os dados informados foram armazenados com sucesso para a SM\").invoke(\"text\").then(text => {\n  const match = text.match(/Nº (\\d+)/);\n  if (match) {\n    numeroSM = match[1];\n    cy.log(\"Número da SM:\", numeroSM);\n  } else {\n    cy.log(\"Número não encontrado!\");\n  }\n});\ncy.get(\".help-block\", {\n  timeout: 15000\n}).should(\"be.visible\").invoke(\"text\").then(texto => {\n  // Exemplo de texto: \"Os dados informados foram armazenados com sucesso para a SM de Nº 31693452!\"\n  const regex = /SM\\s*(?:de)?\\s*(?:Nº|número)?\\s*(\\d+)/i; // Captura o número após 'SM de Nº'\n  const match = texto.match(regex);\n  if (match) {\n    const numeroSM = match[1]; // extrai apenas o número\n    cy.log(\"Número SM capturado:\", numeroSM);\n    // Salva o arquivo JSON no fixtures\n    cy.writeFile(\"cypress/fixtures/numeroSM.json\", {\n      numeroSM\n    });\n    cy.log(numeroSM);\n  } else {\n    throw new Error(`Número SM não encontrado na mensagem: \"${texto}\"`);\n  }\n});",
               "err": {},
-              "uuid": "9e8bb6c8-dbc3-4890-8703-fcbe3394cd2f",
-              "parentUUID": "c6dff6e1-0486-47c4-8896-c112bae0423d",
+              "uuid": "234bde61-83e2-40ea-a6b7-24fc6d334044",
+              "parentUUID": "775df935-6700-48a6-b464-4e6b72b48eec",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9e8bb6c8-dbc3-4890-8703-fcbe3394cd2f"
+            "234bde61-83e2-40ea-a6b7-24fc6d334044"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 183753,
+          "duration": 170746,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "1bbeb752-f10c-4522-a896-e558436abfc3",
+      "uuid": "2c62148b-50e6-4f31-aaa7-64809a4df76e",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/002 - Inclusão de SM Tela 002/004.e2e-inclusao-sm-erros-tela-002.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/002 - Inclusão de SM Tela 002/004.e2e-inclusao-sm-erros-tela-002.cy.js",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7cc2d97a-073c-449a-8e1d-b40efb07f078",
+          "uuid": "8cbcc493-281f-4742-adc1-1b8784f66f50",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios",
           "fullFile": "",
           "file": "",
@@ -154,7 +154,7 @@
               "title": "avançar sem preencher nenhum dos campos",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios avançar sem preencher nenhum dos campos",
               "timedOut": null,
-              "duration": 71824,
+              "duration": 63198,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -163,8 +163,8 @@
               "context": null,
               "code": "cy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get(\":nth-child(1) > .select > .help-block\").should(\"have.text\", \"Tipo de transporte não informado\").and(\"be.visible\");\ncy.get(\".span4 > :nth-child(1) > .control-group > .help-block\").should(\"have.text\", \"Dados do Alvo 1 Incompletos\").and(\"be.visible\");\ncy.get(\".span12 > .help-block\").should(\"have.text\", \"Informe a data e hora prevista de inicio da viagem\").and(\"be.visible\");\ncy.get(\".input-alvo > :nth-child(1) > .control-group > .help-block\").should(\"have.text\", \"Informe o destino da SM\").and(\"be.visible\");",
               "err": {},
-              "uuid": "53113bbf-bed7-4c9e-a033-240e01d90c71",
-              "parentUUID": "7cc2d97a-073c-449a-8e1d-b40efb07f078",
+              "uuid": "b2487161-0735-4e27-b592-a589c68a3c23",
+              "parentUUID": "8cbcc493-281f-4742-adc1-1b8784f66f50",
               "isHook": false,
               "skipped": false
             },
@@ -172,7 +172,7 @@
               "title": "avançar preenchendo \"Tipo de transporte, \"Rota\", \"Data de inicío\" e \"Hora\"",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 002: Validar erros em campos obrigatórios avançar preenchendo \"Tipo de transporte, \"Rota\", \"Data de inicío\" e \"Hora\"",
               "timedOut": null,
-              "duration": 135096,
+              "duration": 136832,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -181,21 +181,21 @@
               "context": null,
               "code": "cy.get(\"#TViagViagem2ViagTtraCodigo\").should(\"exist\").select(\"71\", {\n  force: true\n});\ncy.get(\"#TVrotViagemRota2VrotRotaCodigoVisual-search\").click();\ncy.get(\"input.btn\").should(\"exist\").click({\n  force: true\n});\ncy.get('#TRotaRotaDescricao').type(\"2615910\");\ncy.get('[codigo=\"2615910\"] > :nth-child(2)', {\n  timeout: 10000\n}).click();\ncy.get(\".blockOverlay\", {\n  timeout: 100000\n}).should(\"not.exist\");\ncy.get(\"#TViagViagem2ViagDataPrevisaoInicio\").type(dataSm);\ncy.get(\"#TViagViagem2ViagHoraPrevisaoInicio\").type(\"13:00\");\ncy.get('#Itinerario0DataPrevisaoDeChegada').type(dataSm);\ncy.get('#Itinerario0HoraPrevisaoDeChegada').type(\"14:00\");\ncy.get('#Itinerario0DadosDaCargaCarga0Nf').type(\"1234\");\ncy.get(\"#GerarSm\").should(\"exist\").click({\n  force: true\n});\ncy.get('.span9 > .form-actions').should(\"have.text\", \"\\n\\t\\t\\t\\tErros:\\n\\t\\t\\t\\tRegra de Aceite - Regra para Valor Máximo não localizada \\t\\t\\t\\t\\n\\t\\t\\t\").and(\"be.visible\");",
               "err": {},
-              "uuid": "01000f92-66c7-4616-9a87-3571ddc5384b",
-              "parentUUID": "7cc2d97a-073c-449a-8e1d-b40efb07f078",
+              "uuid": "4c37e321-7212-4e8a-84d1-53b5e997ae8d",
+              "parentUUID": "8cbcc493-281f-4742-adc1-1b8784f66f50",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "53113bbf-bed7-4c9e-a033-240e01d90c71",
-            "01000f92-66c7-4616-9a87-3571ddc5384b"
+            "b2487161-0735-4e27-b592-a589c68a3c23",
+            "4c37e321-7212-4e8a-84d1-53b5e997ae8d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 206920,
+          "duration": 200030,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -211,7 +211,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ad624d7e-b21f-4b49-aeb2-13a90c09fb70",
+      "uuid": "095bbede-ddd6-4caf-9ed3-c442856891c2",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/005.e2e-alteracao-placa-motorista.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/005.e2e-alteracao-placa-motorista.cy.js",
@@ -220,7 +220,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "136d1a91-d703-4e60-bf47-c553873a080d",
+          "uuid": "a10425d5-7748-4188-8a74-aed3cf1d00ca",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista",
           "fullFile": "",
           "file": "",
@@ -231,7 +231,7 @@
               "title": "Alterar a Placa e Motorista da SM com sucesso!",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista Alterar a Placa e Motorista da SM com sucesso!",
               "timedOut": null,
-              "duration": 54790,
+              "duration": 53352,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -240,20 +240,20 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\":nth-child(3) > .btn\").click();\n  cy.get(\"#Recebsm0Placa\").then(campoPlaca => {\n    const valorAtual = campoPlaca.val();\n    if (valorAtual === \"HCJ6C26\") {\n      cy.get(\"#Recebsm0Placa\").clear().type(\"TST1A23\");\n      cy.get(\":nth-child(3) > .row-fluid\").click();\n    } else if (valorAtual === \"TST1A23\") {\n      cy.get(\"#Recebsm0Placa\").clear().type(\"HCJ6C26\");\n      cy.get(\":nth-child(3) > .row-fluid\").click();\n    } else {\n      throw new Error(`Valor inesperado no campo placa: \"${valorAtual}\"`);\n    }\n  });\n  cy.get(\"#TPfisPessoaFisicaPfisCpf\").then(campoCPF => {\n    const valorAtual = campoCPF.val();\n    if (valorAtual === \"04488742530\") {\n      cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"01180160169\");\n      cy.get(\":nth-child(5) > .row-fluid\").click();\n    } else if (valorAtual === \"01180160169\") {\n      cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"04488742530\");\n      cy.get(\":nth-child(5) > .row-fluid\").click();\n    } else {\n      throw new Error(`Valor inesperado no campo CPF: \"${valorAtual}\"`);\n    }\n  });\n  cy.wait(5000);\n  cy.get(\"input.btn\").click();\n  cy.get(\".alert\").should(\"contain\", \"Alteração realizada com sucesso\", {\n    timeout: 60000\n  });\n});",
               "err": {},
-              "uuid": "64a5ffe1-d973-4faa-93c8-eb131893de86",
-              "parentUUID": "136d1a91-d703-4e60-bf47-c553873a080d",
+              "uuid": "4230f53c-c7a5-4ceb-a7ec-6ddca40e1e9b",
+              "parentUUID": "a10425d5-7748-4188-8a74-aed3cf1d00ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "64a5ffe1-d973-4faa-93c8-eb131893de86"
+            "4230f53c-c7a5-4ceb-a7ec-6ddca40e1e9b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 54790,
+          "duration": 53352,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -269,7 +269,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "a6e8b17e-97e0-49a8-ae62-4c6dd2e98f6c",
+      "uuid": "2440ae86-8594-43ae-8b11-6c9e11b555ff",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/006.e2e-alteracao-placa-motorista-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/001 - Alteração de Placa e Motorista/006.e2e-alteracao-placa-motorista-erros.cy.js",
@@ -278,7 +278,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b0a63179-c795-40f1-be44-093af2060dd7",
+          "uuid": "33898a22-0396-4592-94d7-23c79b73fa51",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros",
           "fullFile": "",
           "file": "",
@@ -289,7 +289,7 @@
               "title": "Validação do Campo 'Cliente' e 'SM' na Alteração de Placa, Motorista e Categoria  ",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros Validação do Campo 'Cliente' e 'SM' na Alteração de Placa, Motorista e Categoria  ",
               "timedOut": null,
-              "duration": 17810,
+              "duration": 17467,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -298,8 +298,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\":nth-child(3) > .btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Cliente não informado\");\ncy.get(\"#TViagViagemCodigoCliente\").type(\"543\");\ncy.get(\":nth-child(3) > .btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"SM não informada\");",
               "err": {},
-              "uuid": "fba913f6-91d8-4d0e-a4bb-ae09e323aaf6",
-              "parentUUID": "b0a63179-c795-40f1-be44-093af2060dd7",
+              "uuid": "68407f31-d2e8-4d15-b55c-15cebca327f1",
+              "parentUUID": "33898a22-0396-4592-94d7-23c79b73fa51",
               "isHook": false,
               "skipped": false
             },
@@ -307,7 +307,7 @@
               "title": "Tentar avançar com uma Placa e CPF não registrados, validando mensagens de erro",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Placa, Motorista - erros Tentar avançar com uma Placa e CPF não registrados, validando mensagens de erro",
               "timedOut": null,
-              "duration": 32798,
+              "duration": 31284,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -316,21 +316,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\":nth-child(3) > .btn\").click();\n  cy.wait(5000);\n  cy.get(\"#Recebsm0Placa\").clear().type(\"ebj8484\");\n  cy.get(\"#TPfisPessoaFisicaPfisCpf\").clear().type(\"10454578745\");\n  cy.get(\"input.btn\").click();\n  cy.get('[data-seq=\"0\"] > :nth-child(1) > .control-group > .help-block').should(\"contain\", \"O veículo informado é invalido\");\n  cy.get(\".row-fluid > .error > .help-block\").should(\"contain\", \"Informe o Motorista\");\n});",
               "err": {},
-              "uuid": "c8c3084c-0567-4c95-8998-e28be3d48ee7",
-              "parentUUID": "b0a63179-c795-40f1-be44-093af2060dd7",
+              "uuid": "9184ff50-7f8b-43d6-bb24-33124895038e",
+              "parentUUID": "33898a22-0396-4592-94d7-23c79b73fa51",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fba913f6-91d8-4d0e-a4bb-ae09e323aaf6",
-            "c8c3084c-0567-4c95-8998-e28be3d48ee7"
+            "68407f31-d2e8-4d15-b55c-15cebca327f1",
+            "9184ff50-7f8b-43d6-bb24-33124895038e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 50608,
+          "duration": 48751,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -346,7 +346,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "520824a0-aad5-4110-8aa2-d6c007cca02c",
+      "uuid": "8203eef2-11e0-4ac2-a6b9-9710fc01c516",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/007.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/007.e2e-alteracao-NF-Produtos-Itinerarios.cy.js",
@@ -355,7 +355,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dad3333e-fa8d-467f-ae13-c4d0cb446261",
+          "uuid": "44b966ef-8160-45e4-8f38-4375abdcec7d",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários",
           "fullFile": "",
           "file": "",
@@ -366,7 +366,7 @@
               "title": "Alteração de Nota Fiscal e Produto na SM",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alteração de Nota Fiscal e Produto na SM",
               "timedOut": null,
-              "duration": 42353,
+              "duration": 42651,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -375,8 +375,8 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.log(numeroSM);\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-list-alt\", {\n    timeout: 20000\n  }).click();\n  cy.get('[id^=\"Itinerario\"][id$=\"DataPrevisaoDeChegada\"]').type(`${dataChegadaSm}`, {\n    force: true\n  });\n  cy.get(\"#Itinerario0HoraPrevisaoDeChegada\").clear({\n    force: true\n  }).type(horaSm);\n  cy.get(\"#Itinerario0DadosDaCargaCarga0Nf\").clear({\n    force: true\n  }).type(\"123\");\n  cy.get(\"#Itinerario0DadosDaCargaCarga0TipoProduto\").select(\"CACAU\", {\n    force: true\n  });\n  cy.get(\"#Itinerario0DadosDaCargaCarga0ValorTotalNf\").clear({\n    force: true\n  }).type(\"5267\");\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".alert\").contains(\"Os dados informados foram armazenados com sucesso!\", {\n    timeout: 60000\n  });\n});",
               "err": {},
-              "uuid": "ac5e983a-0053-46bb-bcff-353f87d848c4",
-              "parentUUID": "dad3333e-fa8d-467f-ae13-c4d0cb446261",
+              "uuid": "0792bba5-9c06-4b0f-95cf-dd537614077f",
+              "parentUUID": "44b966ef-8160-45e4-8f38-4375abdcec7d",
               "isHook": false,
               "skipped": false
             },
@@ -384,7 +384,7 @@
               "title": "Alterar Itinerário, adicionar parada com sucesso",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários Alterar Itinerário, adicionar parada com sucesso",
               "timedOut": null,
-              "duration": 50066,
+              "duration": 49696,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -397,22 +397,22 @@
                 "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `[codigo=\"13577259\"] > :nth-child(1)`, but never found it.\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/007.e2e-alteracao-NF-Produtos-Itinerarios.cy.js:72:15)\n    at getRet (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://tstportal.buonny.com.br/__cypress/runner/cypress_runner.js:141671:19)",
                 "diff": null
               },
-              "uuid": "904bbceb-d617-4702-9f6c-7984b029b8be",
-              "parentUUID": "dad3333e-fa8d-467f-ae13-c4d0cb446261",
+              "uuid": "a83e3943-152e-4953-b781-3999d6d8531c",
+              "parentUUID": "44b966ef-8160-45e4-8f38-4375abdcec7d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ac5e983a-0053-46bb-bcff-353f87d848c4"
+            "0792bba5-9c06-4b0f-95cf-dd537614077f"
           ],
           "failures": [
-            "904bbceb-d617-4702-9f6c-7984b029b8be"
+            "a83e3943-152e-4953-b781-3999d6d8531c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 92419,
+          "duration": 92347,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -428,7 +428,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "2a377ccd-9a7d-4d7b-a416-d6a1852e157b",
+      "uuid": "e0028733-42e1-4d21-af69-7cf3ea6ca724",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/008.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/002 - E2E Alteração de SM/002 - Alteração de NF Produtos e Itinerários/008.e2e-alteracao-NF-Produtos-Itinerarios-erros.cy.js",
@@ -437,7 +437,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "adf85ee6-3ec7-45ab-9611-b4bfd3ba8d4d",
+          "uuid": "2babd6b9-a724-4499-8099-ce6d8fa38a6a",
           "title": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros",
           "fullFile": "",
           "file": "",
@@ -448,7 +448,7 @@
               "title": "Validação do campo 'Cliente', na alteração de itinerários",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros Validação do campo 'Cliente', na alteração de itinerários",
               "timedOut": null,
-              "duration": 17554,
+              "duration": 22457,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -457,8 +457,8 @@
               "context": null,
               "code": "cy.get(\"#TViagViagemCodigoCliente\").clear();\ncy.get(\"#TViagViagemViagCodigoSm\").clear();\ncy.get(\"input.btn\").click();\ncy.get(\".help-block\").should(\"contain\", \"Informe um cliente\");",
               "err": {},
-              "uuid": "9bbcc46d-e9cb-4209-9408-647a01a7fa81",
-              "parentUUID": "adf85ee6-3ec7-45ab-9611-b4bfd3ba8d4d",
+              "uuid": "d250e43e-e18b-4ee7-9f06-68c0bf78ec76",
+              "parentUUID": "2babd6b9-a724-4499-8099-ce6d8fa38a6a",
               "isHook": false,
               "skipped": false
             },
@@ -466,7 +466,7 @@
               "title": "lnclusão de Itinerários, validação do campo 'Local Parada'",
               "fullTitle": "Portal Buonny E2E - Alteração de SM - Alterar Notas Fiscais, Produtos e Itinerários - erros lnclusão de Itinerários, validação do campo 'Local Parada'",
               "timedOut": null,
-              "duration": 32991,
+              "duration": 34132,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -475,21 +475,21 @@
               "context": null,
               "code": "cy.fixture(\"numeroSM\").then(data => {\n  const numeroSM = data.numeroSM;\n  cy.get(\"#TViagViagemCodigoCliente\").clear().type(\"87906\");\n  cy.get(\"#TViagViagemViagCodigoSm\").clear().type(numeroSM);\n  cy.get(\"input.btn\").click();\n  cy.get(\".icon-globe\", {\n    timeout: 10000\n  }).click();\n  cy.get(\".form-actions > .btn-success\").click();\n  cy.get(\".help-block\").should(\"contain\", \"Informe o destino da SM\");\n});",
               "err": {},
-              "uuid": "445fbce9-76b6-40f8-b6c2-5cc8a4eaa5cb",
-              "parentUUID": "adf85ee6-3ec7-45ab-9611-b4bfd3ba8d4d",
+              "uuid": "1a8f860c-e741-4bd2-9ec1-023559e6f7d8",
+              "parentUUID": "2babd6b9-a724-4499-8099-ce6d8fa38a6a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9bbcc46d-e9cb-4209-9408-647a01a7fa81",
-            "445fbce9-76b6-40f8-b6c2-5cc8a4eaa5cb"
+            "d250e43e-e18b-4ee7-9f06-68c0bf78ec76",
+            "1a8f860c-e741-4bd2-9ec1-023559e6f7d8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 50545,
+          "duration": 56589,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -505,7 +505,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "fa6436cd-03d4-49f7-b3b0-b816058329a3",
+      "uuid": "edffbe03-dc65-49eb-bb8e-9ad7b5e30321",
       "title": "",
       "fullFile": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
       "file": "cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js",
@@ -514,7 +514,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3236eb50-2a5c-4e64-bf91-f8e1221e3b6b",
+          "uuid": "5b4a0cbb-54e9-4fbb-ab86-7e666cca4c6f",
           "title": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso",
           "fullFile": "",
           "file": "",
@@ -525,33 +525,29 @@
               "title": "Avançar,preenchendo todos campos obrigatórios",
               "fullTitle": "Portal Buonny E2E - Inclusão de SM tela - 001: sucesso Avançar,preenchendo todos campos obrigatórios",
               "timedOut": null,
-              "duration": 134703,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 104855,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const entradas = {\n  codCliente: \"87906\",\n  transportador: \"BUONNY PROJETOS E SERVICOS\",\n  cpfMotorista: \"64614686095\",\n  cpfAjudante: \"075.421.058-84\",\n  placaTeste: \"TST1A23\"\n};\ncy.get(\"#TViagViagem2ViagCodigoCliente\").type(entradas.codCliente);\ncy.get(\"#consulta-incluir\").click();\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigo\", {\n  timeout: 10000\n}).select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TViagViagem2CodigoTransportador\", {\n  timeout: 10000\n}).select(entradas.transportador);\ncy.get(\"#TMotoMotorista2MotoCpf\").type(entradas.cpfMotorista);\ncy.get(\"#TMotoMotorista2Tipo\").select(\"CARRETEIRO\");\ncy.get(\"#btn-motorista\").click();\ncy.get(\"#TViagViagem2SelecionaTipo2\").select(\"A\");\ncy.get(\"#TMotoMotorista2MotoCpfAjudante\").type(entradas.cpfAjudante);\ncy.get(\"#TViagViagem2ViagGrisPjurPessOrasCodigoAjudante\").select(\"NÃO POSSUI GERENCIADORA\");\ncy.get(\"#TVeicVeiculo20VeicPlaca\").type(entradas.placaTeste);\ncy.wait(5000);\ncy.get(\"#consulta-incluir\").click();\ncy.url().should(\"include\", \"/SolicitacoesMonitoramento2/incluir/N/N/\");",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 60000ms: expected 'https://tstportal.buonny.com.br/portal/solicitacoes_monitoramento2/consultar_para_incluir' to include '/SolicitacoesMonitoramento2/incluir/N/N/'",
-                "estack": "AssertionError: Timed out retrying after 60000ms: expected 'https://tstportal.buonny.com.br/portal/solicitacoes_monitoramento2/consultar_para_incluir' to include '/SolicitacoesMonitoramento2/incluir/N/N/'\n    at Context.eval (webpack://test/./cypress/e2e/web/001 - E2E Portal Buonny/002 - Portal 2/001 - E2E Inclusão de SM/001 - Inclusão de SM Tela 001/001.e2e-inclusao-sm-tela-001.cy.js:43:17)",
-                "diff": null
-              },
-              "uuid": "ecbab02a-cb30-4245-834a-2ab1183d96b0",
-              "parentUUID": "3236eb50-2a5c-4e64-bf91-f8e1221e3b6b",
+              "err": {},
+              "uuid": "0c9995a8-2bfa-4a8a-862b-62ed3d6db860",
+              "parentUUID": "5b4a0cbb-54e9-4fbb-ab86-7e666cca4c6f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "ecbab02a-cb30-4245-834a-2ab1183d96b0"
+          "passes": [
+            "0c9995a8-2bfa-4a8a-862b-62ed3d6db860"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 134703,
+          "duration": 104855,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
